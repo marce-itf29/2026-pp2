@@ -1,13 +1,33 @@
 :toc: left
 :toclevels: 4
-:toc-title: Lógica computacional
+:toc-title: Practica profesional II
 :imagesdir: ./images
 :stem: 
 :stylesheet: daro-dark.css
 
-= Probabilidad prueba
+= Practica profesional II
+
+== Apertura
+
+- ¿Cómo está organizada PP2? Sus Objetivos
+
+La asignatura está dividida en 16 semanas, en 4 etapas unidades: 
+
+1. "Preliminar"
+2. "Análisis"
+3. "Simulación del SI"
+4. "Implementación"
+
+Se Realizarán un proyecto Integrador a partir de los contenidos dictados  con una primer entrega en la Semana 7 y una final en la Semana 13.
+A continuación verán una infografía y una rúbrica con los objetivos a desarrollar en la materia
+
+image::image0.1.png[]
+
+image::image0.2.png[]
 
 == Semana 1
 
-=== Argumento
+=== 
+
+
 
