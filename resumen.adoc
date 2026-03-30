@@ -25,6 +25,8 @@ image::image0.1.png[]
 
 image::image0.2.png[]
 
+image::image0.2.png[]
+
 == Semana 1
 
 === 
