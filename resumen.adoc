@@ -7,7 +7,19 @@
 
 = Practica profesional II
 
+== Navegacion:
+
+- Desarrollo (lo que antes era el libro)
+- Oficina de practicas: es lo que tenemos que hacer
+- Lo mismo que se tiene arriba, se tiene abajo
+
+
 == Apertura
+
+- Lo mas importante:
+
+** Apertura
+** Cronograma
 
 - ¿Cómo está organizada PP2? Sus Objetivos
 
@@ -27,9 +39,177 @@ image::image0.2.png[]
 
 image::image0.2.png[]
 
+
+contacto profesora: silvia.canizares@bue.edu.ar
+
+
 == Semana 1
 
-=== 
+=== 🧠 Introducción
 
+En esta semana se aborda el desarrollo de sistemas orientados a la gestión y apoyo a la toma de decisiones, enfocándose en las técnicas de relevamiento de información, sus tipos y la documentación de los datos obtenidos.
 
+El relevamiento es una etapa clave para comprender las necesidades del cliente y construir soluciones adecuadas.
+
+---
+
+=== 🔎 ¿Qué es el relevamiento?
+
+Un relevamiento es un estudio sistemático y organizado sobre un tema, centrado en el cliente y sus necesidades.
+
+Cuando un cliente solicita un sistema, inicialmente brinda una idea general. El relevamiento permite profundizar en esa idea para obtener información relevante que el cliente puede no considerar importante.
+
+Ejemplos de preguntas:
+- ¿Qué tipo de actividad desarrolla el cliente?
+- ¿Qué información necesita?
+- ¿Cómo gestiona su stock o procesos?
+
+El objetivo es lograr una solución adecuada y pertinente.
+
+---
+
+=== 🎯 Necesidades del cliente
+
+Un buen relevamiento implica:
+- Identificar necesidades reales
+- Comprender el contexto del cliente
+- Analizar las razones detrás de sus decisiones
+- Determinar el público objetivo
+
+Esto permite adaptar la solución y generar valor diferencial.
+
+---
+
+=== ⚙️ ¿Cómo se prepara un relevamiento?
+
+Para realizar un relevamiento efectivo:
+
+1. Indagar en organizaciones similares para obtener contexto
+2. Analizar la información recopilada
+3. Identificar y describir el entorno y actores
+4. Llevar la información a un plano práctico según el cliente
+
+---
+
+=== 🧩 Tipos de relevamiento
+
+Existen distintas técnicas para recolectar información:
+
+==== 🗣️ Entrevista
+
+Es la principal herramienta de relevamiento.
+
+Permite obtener:
+- Necesidades
+- Responsabilidades
+- Objetivos
+- Procesos
+- Estructuras organizacionales
+
+Momentos de la entrevista:
+- Antes → preparación
+- Durante → ejecución
+- Después → análisis
+
+Importante:
+El éxito depende de la experiencia y preparación del entrevistador.
+
+---
+
+==== 📝 Cuestionarios
+
+Se utilizan cuando:
+- Se requiere información concreta
+- Hay gran cantidad de personas
+
+Características:
+- Formatos estandarizados
+- Preguntas claras
+- Difícil observar reacciones
+
+Ventajas:
+- Escalabilidad
+- Recolección masiva de datos
+
+Condición clave:
+- Comprensión y honestidad de las respuestas
+
+---
+
+==== ❓ Tipos de preguntas
+
+- Abiertas → permiten respuestas amplias
+- Cerradas → respuestas limitadas (sí/no, opciones)
+- Semiabiertas → combinan ambas
+- En batería → conjunto de preguntas relacionadas
+- De evaluación → valoran opiniones o situaciones
+- Motivadoras → fomentan la participación
+
+---
+
+==== 👀 Observación y participación
+
+Permite obtener información difícil de conseguir por otros medios.
+
+Se observa:
+- Condiciones de trabajo
+- Organización del espacio
+- Interacción del personal
+- Procesos reales
+
+Consideraciones:
+- A veces no se puede participar, pero sí observar
+- No intervenir, solo registrar información
+- Participar si es posible para enriquecer el análisis
+
+---
+
+==== 📂 Examen de documentos
+
+Permite obtener información cuantitativa:
+
+- Volúmenes
+- Frecuencias
+- Tendencias
+
+También ayuda a entender:
+- Normas
+- Procedimientos
+- Políticas organizacionales
+
+Sirve para validar información obtenida en entrevistas o cuestionarios.
+
+---
+
+=== 📄 Informe del primer contacto
+
+Luego del relevamiento se debe documentar la información.
+
+Debe incluir:
+- Datos de la persona relevada (nombre y puesto)
+- Lugar y fecha
+- Breve historia de la organización
+- Técnica utilizada (entrevista, encuesta, etc.)
+- Resultados obtenidos
+
+Importante:
+No omitir información relevante, ya que será clave para definir objetivos del sistema.
+
+---
+
+=== 🧠 Tips para la actividad
+
+Para un relevamiento exitoso:
+
+1. Investigar previamente el entorno
+2. Establecer un primer contacto con responsables de decisión
+3. Organizar la información recolectada
+4. Definir la estrategia de relevamiento
+5. Diseñar preguntas y estructura de entrevistas/cuestionarios
+
+---
+
+=== 📌 Idea clave
+
+"El relevamiento de información es la base para desarrollar sistemas que realmente respondan a las necesidades del cliente y apoyen la toma de decisiones."
 
