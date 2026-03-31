@@ -213,3 +213,55 @@ Para un relevamiento exitoso:
 
 "El relevamiento de información es la base para desarrollar sistemas que realmente respondan a las necesidades del cliente y apoyen la toma de decisiones."
 
+=== 📌 Mapa mental
+
+[mermaid]
+----
+graph TD
+
+A[Relevamiento de información] --> B[Objetivo]
+A --> C[Preparación]
+A --> D[Técnicas]
+A --> E[Informe]
+
+B --> B1[Entender cliente]
+B --> B2[Detectar necesidades]
+B --> B3[Apoyar decisiones]
+
+C --> C1[Indagar contexto]
+C --> C2[Analizar información]
+C --> C3[Identificar actores]
+C --> C4[Aplicar al caso]
+
+D --> D1[Entrevista]
+D --> D2[Cuestionarios]
+D --> D3[Observación]
+D --> D4[Documentos]
+D --> D5[Tipos de preguntas]
+
+D1 --> D1A[Antes]
+D1 --> D1B[Durante]
+D1 --> D1C[Después]
+
+D2 --> D2A[Datos masivos]
+D2 --> D2B[Formato estructurado]
+
+D3 --> D3A[Procesos reales]
+D3 --> D3B[Sin intervención]
+
+D4 --> D4A[Datos cuantitativos]
+D4 --> D4B[Normas y procesos]
+
+D5 --> D5A[Abiertas]
+D5 --> D5B[Cerradas]
+D5 --> D5C[Mixtas]
+
+E --> E1[Datos del cliente]
+E --> E2[Contexto]
+E --> E3[Técnica usada]
+E --> E4[Resultados]
+
+A --> F[Clave]
+F --> F1[Base del sistema]
+F --> F2[Evita errores]
+----
