@@ -47,7 +47,7 @@ contacto profesora: silvia.canizares@bue.edu.ar
 
 === 🧠 Introducción
 
-En esta semana se aborda el desarrollo de sistemas orientados a la gestión y apoyo a la toma de decisiones, enfocándose en las técnicas de relevamiento de información, sus tipos y la documentación de los datos obtenidos.
+En esta semana se aborda el desarrollo de sistemas orientados a la gestión y apoyo a la toma de decisiones, enfocándose en *las técnicas de relevamiento* de información, sus tipos y la documentación de los datos obtenidos.
 
 El relevamiento es una etapa clave para comprender las necesidades del cliente y construir soluciones adecuadas.
 
@@ -136,7 +136,7 @@ Condición clave:
 
 ---
 
-==== ❓ Tipos de preguntas
+===== ❓ Tipos de preguntas
 
 - Abiertas → permiten respuestas amplias
 - Cerradas → respuestas limitadas (sí/no, opciones)
@@ -265,3 +265,740 @@ A --> F[Clave]
 F --> F1[Base del sistema]
 F --> F2[Evita errores]
 ----
+
+
+== Semana 2
+
+=== ¿Qué es el método de caso?
+
+En esta semana comenzamos trabajando con un caso práctico, para poder aplicar las técnicas vistas anteriormente y empezar a desarrollar nuestro proyecto.
+
+El método de caso es una forma de enseñanza en la que los estudiantes aprenden a partir de situaciones reales o similares a la vida real. Esto permite que cada uno construya su propio aprendizaje en un contexto cercano a lo que ocurre en la práctica.
+
+Se basa principalmente en:
+
+* La participación activa de los estudiantes.
+* El trabajo colaborativo.
+* El diálogo como herramienta para analizar y tomar decisiones.
+
+=== Definición
+
+El Método de Caso (MdC) es una estrategia de enseñanza donde se presentan situaciones reales para que los estudiantes las analicen, discutan y propongan soluciones.
+
+Este método busca que el aprendizaje no sea solo teórico, sino también práctico y aplicado.
+
+=== Origen
+
+El método de caso se originó en la Universidad de Harvard, alrededor del año 1914.
+
+Fue utilizado inicialmente en la enseñanza del Derecho, con el objetivo de que los estudiantes:
+
+* Analicen situaciones reales.
+* Tomen decisiones.
+* Evalúen diferentes acciones.
+* Fundamenten sus opiniones.
+
+=== Dimensiones fundamentales del MdC
+
+Existen tres aspectos clave dentro del método de caso:
+
+. *Participación activa* +
+El estudiante debe involucrarse directamente en el análisis del caso.
+
+. *Trabajo en equipo* +
+Es importante colaborar con otros compañeros para enriquecer las ideas.
+
+. *Diálogo y discusión* +
+El intercambio de opiniones es fundamental para llegar a conclusiones y tomar decisiones.
+
+=== Objetivos del método de caso
+
+El uso de esta técnica tiene varios objetivos importantes:
+
+==== 1. Formación profesional
+
+Preparar a los estudiantes para que puedan resolver problemas reales de manera adecuada, teniendo en cuenta el contexto social, humano y legal.
+
+==== 2. Enfoque en problemas reales
+
+Trabajar con situaciones que pueden ser confusas o complejas, como ocurre en la vida real.
+
+Esto implica:
+
+* Analizar el problema.
+* Compararlo con la teoría.
+* Identificar sus particularidades.
+* Proponer soluciones.
+* Evaluar resultados.
+
+==== 3. Construcción del conocimiento
+
+Generar un aprendizaje más profundo mediante:
+
+* La discusión.
+* La explicación de ideas.
+* El intercambio de opiniones.
+* La revisión y mejora de los conocimientos.
+
+
+=== ¿Qué permite construir un buen caso?
+
+==== Pertinencia de un MdC
+
+La construcción de un buen caso parte del principio de *pertinencia*. Para ello es necesario considerar las siguientes características:
+
+* Se basa en casos reales.
+* Su objetivo es aumentar la motivación hacia el tema de estudio mediante la aplicación práctica.
+* Aumenta la seguridad y autoestima al poner en práctica lo aprendido.
+* Un buen caso no tiene un solo tema ni una única solución.
+* No ejemplifica ni sirve por sí mismo como base para generalizar.
+* No muestra una acción correcta o incorrecta, sino que sirve como base para discutir y reflexionar de forma objetiva y constructiva sobre situaciones concretas.
+
+==== Tipos de enfoque de los casos
+
+Los casos se pueden centrar en:
+
+* Estudio de descripciones.
+* Resolución de problemas. Por Ejemplo: La toma de decisiones o simulaciones.
+* Casos centrados en la aplicación de principios. Por ejemplo: Es decir, aquellos que favorecen el desarrollo del pensamiento deductivo, partiendo de lo general hacia conclusiones específicas.
+
+==== Características de un buen caso
+
+Entonces, el caso es una construcción didáctica que:
+
+* Debe ser real o verosímil (los casos inventados suelen desmotivar).
+* Debe generar acción y producir resultados.
+* Debe incluir los elementos necesarios para comprender la situación a resolver.
+* Debe estar vinculado a un ámbito profesional, disciplinar o territorial específico, para lograr mayor involucramiento.
+
+==== Otros criterios
+
+También se deben tener en cuenta los siguientes aspectos:
+
+. El modelo seguido.
+. La estructura.
+. El carácter temático o integral (puede ser interdisciplinario).
+. El propósito explícito.
+. Otros criterios adicionales.
+
+=== ¿Qué es necesario definir para construir un buen caso?
+
+Al momento de armar un buen caso, es necesario partir de una pregunta orientadora simple:
+
+¿Este caso sirve?
+
+A partir de este interrogante, se deben considerar los siguientes principios:
+
+==== Principios a tener en cuenta
+
+. *Pertinencia* +
+El caso debe ser adecuado al objetivo de aprendizaje. También llamado “ajuste”, para lograr que la cuestión analizada se vincule con los conocimientos en desarrollo.
+
+. *Relevancia* +
+Debe ser significativo e importante para quien lo analiza. También llamado interés. Debe atrapar el interés inmediato de los/las estudiantes.
+
+. *Disponibilidad / acceso a la información* +
+Se debe contar con la información necesaria para poder trabajar el caso. Esto es crítico, ya que si no se cuenta con datos suficientes, no es posible escribir el caso y, de este modo, es mejor abandonarlo.
+
+. *Potencialidad* +
+Debe permitir el análisis, la reflexión y distintas posibles soluciones. Posibilita los logros previstos.
+
+. *Estilo* +
+La forma en que se presenta debe ser clara y comprensible. Debe ser atractivo (cualquiera sea el soporte).
+
+. *Originalidad* +
+Debe aportar algo distinto o interesante que motive el análisis. Aún cuando se trate de una situación clásica, el planteo que se destaque por su novedad y distinción.
+
+. *Adecuación* +
+Debe estar adaptado al nivel y contexto de los estudiantes. El caso debe estar pensado para que un grupo en particular pueda trabajarlo. Por lo que debe considerarse el perfil y características del destinatario.
+
+. *Tiempos* +
+Debe poder resolverse dentro del tiempo disponible. La resolución del problema que presente el caso debe realizarle en un período de tiempo que permita poner en juego los aprendizajes y evidencie el avance en las posibles soluciones.
+
+=== Análisis del entorno de estudio
+
+==== Fase preliminar
+
+En esta fase se realiza la lectura del caso hasta comprenderlo completamente (las veces que sea necesario).  
+Es importante analizarlo desde diferentes perspectivas para entender bien la situación planteada.
+
+==== Fase de expresión de opiniones y juicios
+
+En esta etapa el trabajo es individual.  
+Es un momento para reflexionar sobre lo que ocurre en el caso, por qué sucede y qué variables intervienen.
+
+==== Fase de contraste
+
+En esta fase se da el diálogo grupal.  
+Los integrantes se reúnen para compartir sus ideas, compararlas y construir un análisis conjunto.
+
+Dependiendo de la cantidad de personas, se pueden formar grupos más pequeños para facilitar el intercambio.  
+Este proceso enriquece el debate y debe estar guiado por un mediador o docente que oriente, organice y promueva nuevas preguntas.
+
+==== Fase de reflexión teórica
+
+En la etapa final, se vuelve al trabajo en grupo reducido para redactar un informe con el análisis del caso.
+
+El trabajo grupal es fundamental en esta metodología, ya que implica debatir, defender, ajustar y negociar ideas.  
+Esto permite enriquecer el aprendizaje a partir del intercambio con los demás.
+
+=== 👀¿Qué se requiere para analizar un caso?
+
+==== Pasos para analizar un caso
+
+La riqueza de esta herramienta se obtiene del análisis de las interacciones entre los integrantes de los grupos.  
+Por eso es importante seguir estos pasos:
+
+. *Identificación* +
+Leé y buscá comprender el caso para identificar el problema o situación planteada.
+
+. *Recopilación* +
+Reuní todos los datos relevantes disponibles (documentos, informes, entrevistas, evidencia, etc.).
+
+. *Análisis* +
+Preguntate qué información brinda el caso y qué problema presenta. Examiná y procesá los datos.
+
+. *Búsqueda de soluciones* +
+Desde distintas perspectivas, proponé posibles soluciones.
+
+. *Evaluación* +
+Analizá las ventajas y desventajas de cada solución y sus posibles efectos.
+
+. *Toma de decisiones* +
+Elegí la mejor alternativa en base al análisis realizado.
+
+. *Elaboración de argumentos* +
+Justificá tu decisión con argumentos sólidos.
+
+. *Implementación* +
+Definí acciones concretas (por ejemplo, asignar tareas o armar un plan de acción).
+
+. *Seguimiento* +
+Evaluá los resultados obtenidos y realizá ajustes si es necesario.
+
+. *Comunicación* +
+Mantené un diálogo fluido con las partes involucradas.
+
+. *Documentación* +
+Registrá todo el proceso: datos, decisiones y acciones realizadas.
+
+=== Caso Chrysler y método de análisis de casos
+
+==== Resumen del caso Chrysler
+
+El caso muestra cómo Chrysler logró recuperarse de una crisis enfocándose en el cliente mediante investigación de mercado.
+
+- Reestructuró la empresa en equipos interdisciplinarios
+- Incorporó la opinión del cliente desde el diseño (encuestas, grupos foco, pruebas)
+- Analizó la competencia y el comportamiento postventa
+- Mejoró calidad, costos y tiempos de desarrollo
+
+Sin embargo, el principal problema fue un exceso de enfoque en la investigación, descuidando:
+
+- Producción
+- Competencia
+- Producto final
+
+Esto generó productos poco competitivos, lentitud en el mercado y finalmente una crisis.
+
+---
+
+==== Relación con el método de análisis de casos
+
+===== 1. Identificación
+El problema principal es el desequilibrio entre investigación y ejecución.
+
+===== 2. Recopilación
+Se utilizaron datos de clientes: encuestas, entrevistas, pruebas de producto.
+
+===== 3. Análisis
+La estrategia estaba centrada en el cliente, pero ignoró variables clave como tiempos, competencia y calidad final.
+
+===== 4. Búsqueda de soluciones
+- Reducir la investigación excesiva
+- Equilibrar con producción y análisis del mercado
+
+===== 5. Evaluación
+Ventajas:
+- Mejor conocimiento del cliente
+
+Desventajas:
+- Costos elevados
+- Procesos lentos
+
+===== 6. Toma de decisiones
+Aplicar una investigación más eficiente y balanceada.
+
+===== 7. Elaboración de argumentos
+Escuchar al cliente no es suficiente si no se logra un buen producto final.
+
+===== 8. Implementación
+Optimizar procesos internos y tiempos de desarrollo.
+
+===== 9. Seguimiento
+Evaluar resultados en el mercado y ajustar estrategias.
+
+---
+
+==== Conclusión
+
+El caso Chrysler demuestra que una estrategia bien orientada puede fallar si no se equilibra correctamente.
+
+El método de análisis de casos permite:
+- Detectar problemas
+- Evaluar decisiones
+- Proponer mejoras
+
+Es clave considerar todas las variables del contexto, no solo una.
+
+
+== Caso a analizar clinica SePrise. Historia del cliente
+
+* *1940 - Fundación*:  
+La clínica SePrise fue fundada el 25 de abril de 1940 por los doctores Enrique Seprok y Luis Primak, en su ubicación actual de Av. Lezama.
+
+* *1942 - Inauguración*:  
+** En 1942 se construyó el edificio actual que constaba de:
+*** 36 habitaciones simples  
+*** 2 quirófanos  
+*** 1 sala de partos  
+*** 5 pisos  
+** A su inauguración asistieron autoridades nacionales y figuras de la sociedad.  
+** La clínica nace como una maternidad.
+
+* *1947 - Innovación*:  
+** Centro de formación médica en múltiples especialidades.  
+** Incorporación de equipo de Rayos X (tecnología avanzada para la época).
+
+* *1957 - Venta*:  
+El doctor Seprok vende la clínica a un grupo de más de 20 médicos que continúan su desarrollo.
+
+* *2010 - Nuevo edificio*:  
+** Nuevo edificio de 12 plantas.  
+** Integración con edificio histórico.  
+** Modernización tecnológica.
+
+* *2023 - Excelencia*:  
+** Ampliación y modernización continua.  
+** Incorporación de equipamiento de última tecnología.  
+** Mejora en cantidad y calidad de servicios.
+
+=== Institucional
+
+==== Quiénes somos
+
+Clínica SePrise, fundada en 1940, ubicada en Av. Lezama.
+
+==== Nuestra clínica
+
+* Amplia gama de servicios de calidad.
+* Equipamiento médico de alta tecnología.
+* Ambiente confortable y renovado.
+
+==== Además
+
+* Profesionales de reconocida trayectoria.
+* Enfoque en el cuidado del paciente y su familia.
+* Respeto por normas éticas.
+* 160 camas de internación.
+
+=== Misión
+
+* Brindar servicios y asistencia médica.
+* Garantizar atención personalizada.
+* Asegurar calidad médica y ética profesional.
+
+=== Propósitos
+
+* Ser la elección de los pacientes.
+* Destacarse en calidad médica y humana.
+* Mantener alto estándar de confort y tecnología.
+
+=== Recursos Humanos
+
+* Profesionales
+* Técnicos/as
+* Auxiliares
+
+Equipo altamente capacitado para:
+
+* Internación
+* Servicios ambulatorios
+
+=== Servicios
+
+La clínica ofrece:
+
+* Consultorios externos
+* Internación
+* Estudios
+* Guardia médica
+* Enfermería
+* Nutrición
+* Farmacia e insumos
+
+=== Proyecto
+
+La clínica busca implementar una plataforma moderna para gestionar:
+
+* Consultorios externos
+* Circuito de estudios
+
+---
+
+=== Circuito: Consultorios Externos
+
+==== Objetivo del sistema
+
+El sistema de salud debe garantizar:
+
+* Servicios accesibles y equitativos
+* Nivel profesional óptimo
+* Planificación, evaluación y mejora continua
+
+El sistema se caracteriza por la *calidad*.
+
+==== Proceso administrativo de atención ambulatoria
+
+Etapas:
+
+1. Gestión de turnos
+2. Asignación de turnos
+3. Asignación de recursos (médicos, espacios, insumos)
+4. Recepción de pacientes
+5. Atención del paciente
+6. Finalización de atención
+7. Liquidación de honorarios
+
+=== Gestión de turnos
+
+El personal administrativo accede a la agenda con:
+
+* Disponibilidad de profesionales
+* Espacios físicos
+* Horarios
+
+---
+
+==== Toma de turnos
+
+Formas:
+
+1. *Presencial*: el paciente se presenta en el centro
+2. *Telefónica*: mediante call center
+
+---
+
+=== Acreditación de turno
+
+Al llegar, el paciente:
+
+* Acredita identidad
+* Indica modalidad de pago:
+** Obra social
+** Particular
+
+---
+
+==== Espera
+
+El paciente:
+
+* Se dirige a la sala de espera
+* Aguarda ser llamado
+
+---
+
+==== Llamado al consultorio
+
+Puede ser realizado por:
+
+* Médico
+* Personal administrativo
+
+---
+
+==== Atención médica
+
+El médico:
+
+* Accede a la información del paciente
+* Consulta historia clínica si es necesario
+* Registra la atención
+
+Si el paciente no está registrado:
+
+* Se lo busca por:
+** Nombre y apellido
+** Número de identificación
+
+---
+
+==== Nuevos turnos
+
+Si se requiere seguimiento:
+
+* Se asigna un nuevo turno
+
+---
+
+==== Armado de agenda
+
+Se consideran:
+
+* Disponibilidad de profesionales
+* Recursos
+* Horarios
+
+---
+
+=== Circuito: Estudios
+
+==== Definición
+
+Se consideran estudios todas las prestaciones destinadas a diagnosticar problemas de salud.
+
+---
+
+==== Proceso administrativo
+
+Incluye:
+
+* Gestión de agenda (si aplica)
+* Asignación de turnos
+* Administración de insumos
+* Recepción de pacientes
+* Gestión de estudios desde guardia o internación
+
+---
+
+==== Consideraciones
+
+* La mayoría de los estudios requieren turno
+* Excepciones:
+** Laboratorio
+** Estudios de guardia o internación
+
+* Los horarios están definidos en la agenda
+
+---
+
+==== Toma de turnos
+
+Igual que consultorios:
+
+* Presencial
+* Telefónico
+
+---
+
+==== Acreditación
+
+El paciente:
+
+* Verifica identidad
+* Define modalidad de pago
+
+---
+
+==== Estudios de laboratorio
+
+* Atención por orden de llegada
+* Horarios:
+
+** 07:00 a 11:00 → estudios con ayuno  
+** 07:00 a 17:00 → estudios sin ayuno  
+
+---
+
+==== Sala de espera
+
+El paciente espera ser atendido.
+
+---
+
+==== Atención
+
+El paciente:
+
+* Realiza el estudio
+* Recibe comprobante de retiro
+
+---
+
+==== Gestión de insumos
+
+* Control permanente de stock
+* Reposición continua
+
+---
+
+== Semana 3
+
+=== Introducción
+
+Una vez identificado y analizado el caso a estudiar, debemos aplicar alguna de las técnicas de relevamiento —como la entrevista y la encuesta— para la búsqueda de información.
+
+Mediante un ejemplo podrás ver cómo podemos obtener la información que necesitamos para armar el objetivo y los sub-objetivos de un proyecto. De esta manera nos queda definido cada uno de los procesos que se analizarán en el futuro.
+
+Es importante considerar que para el ejemplo deberás redactar primero la historia del caso y luego las rutinas relacionadas con las actividades.
+
+Además, de describir los circuitos informatizados que van a dar origen al objetivo, conociendo a partir de estas necesidades los requerimientos de nuestro/a cliente.
+
+¡Comencemos!
+
+---
+
+=== Caso modelo: Hotel Newton Palace
+
+==== Nuestra historia
+
+En 1968 los hermanos Londra iniciaron un proyecto de fundar un hotel en el centro de la ciudad de Necochea, sobre la concurrida Avenida 2. La idea era visionaria pues sería el primer hotel en Necochea para recibir a turistas y extranjeros/as que aún no habían llegado.
+
+La idea era construir un hotel con una hermosa vista al mar, con una infraestructura de 4 niveles que incluiría más de 50 habitaciones. En 1970 se recibieron los/las primeros/as huéspedes y en 1971 se inauguró formalmente, albergando a grandes figuras.
+
+El nombre de Hotel Newton Palace proviene del físico y matemático Isaac Newton, persona admirada por los hermanos Londra. En 1982 fue reconocido como uno de los mejores hoteles de Necochea por su gran servicio y variedad.
+
+---
+
+=== Objetivos
+
+==== ¿Cómo realizar objetivos en un proyecto?
+
+Posteriormente, con toda la información que obtuvimos, se define el objetivo.
+
+===== Características
+
+* El objetivo de un proyecto podemos definirlo como el fin al que se desea llegar o la meta que se pretende lograr.
+* Este debe ser único, abstracto, cuantificable y realizarlo con los medios económicos mínimos.
+* El objetivo se debe desagregar, es decir dividirlo en pequeños objetivos, para comprender cada uno de los procesos involucrados.
+* Cada parte representa un sub-objetivo con las características propias de cualquier objetivo.
+
+Teniendo en claro lo expresado anteriormente, procedemos a definir el objetivo de los requerimientos del caso del hotel Newton Palace relacionado a la ocupación de las instalaciones del hotel.
+
+Observamos que para ocupar una habitación podemos reservarla con anterioridad, y al momento de ingresar, realizar el check in y cuando nos retiramos el check out. Esto nos da idea de tres acciones diferentes que, a su vez, son independientes entre sí, por eso podemos pensarlo como partes o desagregaciones del objetivo principal.
+
+Luego del análisis realizado, definimos el objetivo y sus desagregaciones de la siguiente manera:
+
+* Procesar reserva
+* Procesar check-in
+* Procesar check-out
+
+Objetivo principal:
+
+* Administrar y gestionar la ocupación de las instalaciones
+
+---
+
+==== Documentación del objetivo con sus desagregaciones y límite
+
+Ya tenemos nuestro objetivo: "Administrar y gestionar la ocupación de las instalaciones" y sus desagregaciones.
+
+Es importante ahora definir el límite para dejar en claro desde dónde y hasta dónde abarca la resolución de los procesos.
+
+En este ejemplo podemos considerar, como límite, desde que un/a huésped solicita la contratación de una habitación hasta que se efectiviza el retiro del establecimiento.
+
+Contamos con los siguientes procesos:
+
+. Reserva
+. Check in
+. Check out
+
+En tal sentido, partimos de la idea de que contamos con toda la información del relevamiento, es decir, tenemos realizados los cuestionarios y hemos ampliado nuestra información mediante las respuestas brindadas por integrantes del hotel. A partir de esto, procedemos a redactar cómo son los procesos, teniendo en cuenta que pueden sufrir variaciones cuando los cotejamos con el/la cliente.
+
+===== Fase de reserva
+
+* La reserva se realiza con una anticipación de 6 meses y la forma puede ser telefónica o presencial.
+* Esta reserva se puede cancelar.
+* Si la cancelación es antes de la semana al ingreso, se devuelve el monto de reserva.
+* Si la cancelación es faltando 6 días, y hasta 48 hs antes la devolución es del 75%, y si es después de las 48 hs no hay devolución de dinero.
+
+Estas acciones nos indican que el proceso, a su vez, se subdivide en solicitar la reserva y cancelar la reserva.
+
+===== Proceso de check in
+
+* Al momento de ingresar al hotel, se verifica si tiene reserva previa o es un ingreso espontáneo.
+* Se completan las fichas de ingreso de los/las huéspedes y se tilda a la o las habitaciones como ocupadas.
+* El/la titular o responsable del ingreso debe dejar los datos de una tarjeta de crédito como garantía de pago.
+* La reserva puede indicar también el uso de cochera y, si este fuera el caso, se indica el número de cochera destinada para el/la huésped y se procede a deshabilitar la cochera por el tiempo de estadía.
+
+===== Proceso de check out
+
+* Al momento del egreso del hotel, se verifica si tiene consumos de habitación y si tiene uso de cochera.
+* Se calculan, en caso afirmativo, los montos a cobrar.
+* Luego se realiza la facturación correspondiente descontando, si fuera el caso, el monto de reserva.
+* Una vez realizado el check out, se habilita la habitación y, si tenía uso de cochera, el espacio que ocupaba el vehículo.
+
+---
+
+=== Relevamiento
+
+==== ¿Cómo aplicar técnicas de relevamiento de información?
+
+Como primer paso a seguir, comenzamos a buscar la información para satisfacer el requerimiento del/la cliente.
+
+Podemos utilizar cualquiera de las herramientas de relevamiento: entrevista, cuestionario u observación directa.
+
+A continuación, retomaremos el caso del Hotel Newton Palace para trabajar un ejemplo de entrevista y de cuestionario.
+
+---
+
+==== ¿Cómo aplicar la técnica de entrevista?
+
+La entrevista se realiza en el horario de la mañana, alejada del inicio de actividades y del almuerzo. Nos alistamos conociendo la historia del hotel, cuáles fueron sus orígenes y cómo se llevan a cabo los circuitos en la regla de negocios hotelera del mercado.
+
+Como establece la técnica de la entrevista, contamos con un bloc de notas para registrar la conversación.
+
+Finalizada la entrevista procedemos a documentarla.
+
+Aquí podés ver un modelo de cómo queda formada la estructura que venimos estudiando:
+
+===== Entrevista: Hotel New Palace
+
+* Hoy, 2 de diciembre del 2022, comenzamos la entrevista con el encargado del hotel Newton Palace, Sr Olmos Miguel, a las 09:00 hs.
+
+Concluida la charla, recabamos la siguiente información:
+
+. Categorización de habitaciones y servicios
+* El hotel cuenta con habitaciones estándar y premium, esta categorización se ve reflejada en los precios y en los servicios propios del cuarto.
+* Los precios y servicios de cada tipo de habitación varían.
+* Ofrece alquiler de bicicletas y estacionamiento.
+* La reserva de estacionamiento es necesaria en temporada alta debido a la concurrencia de turistas.
+
+. Recepción y horarios
+* Personal en la recepción disponible las 24 horas.
+* Check-in y check-out en horarios programados.
+
+. Servicios de desayuno
+* Horario de 08:00 a 11:00 en el salón comedor.
+* Desayuno estilo continental de libre demanda.
+* Servicio de habitación disponible.
+
+. Servicios adicionales
+* Servicio de cunas disponible sin cargo.
+* Política de cancelación: 48 horas de antelación para reembolso parcial.
+
+. Necesidad de una aplicación
+* El sector administrativo busca una aplicación para gestionar la estadía de los huéspedes.
+* Se desea informatizar los circuitos de reservas, ingresos, egresos y facturación.
+
+Concluida la entrevista, se pactó la entrega de un cuestionario para que lo responda el personal que diariamente realiza esas actividades.
+
+---
+
+==== ¿Cómo realizar un cuestionario?
+
+Concluida la entrevista, tenemos en claro cuáles son los circuitos que corresponden a los requerimientos del/la cliente. Con la información resultante, con la observación que hicimos al concurrir al lugar y con la investigación realizada sobre la regla de negocios hotelera, estamos en condiciones de crear el cuestionario.
+
+A continuación te proponemos una serie de preguntas que consolidan el cuestionario que precisás llevar a cabo:
+
+. ¿Cómo se realiza la reserva?
+. ¿Cuáles son los pasos a seguir para cancelar la reserva?
+. ¿Cuáles son los medios de pago?
+. ¿Existen descuentos por pago en efectivo?
+. ¿Cuándo se puede realizar la cancelación de la reserva? ¿Y qué sucede cuando se realiza en el tiempo estimado?
+. ¿La cochera tiene costo adicional por día? ¿Cuenta con tarifas por temporada?
+. ¿Cómo se registra el ingreso de los/las huéspedes? ¿Qué datos son fundamentales?
+. Los consumos realizados en la habitación ¿se abonan en el momento o se cargan en la cuenta del/la responsable del hospedaje?
+. ¿El/la titular del hospedaje deja los datos de una tarjeta como garantía de pago?
+. Si el/la huésped no desea la limpieza de la habitación, ¿cómo se procede?
