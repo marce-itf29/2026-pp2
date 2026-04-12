@@ -405,6 +405,52 @@ a {
 </li>
 </ul>
 </li>
+<li><a href="#_semana_4_diagramas_de_flujo_de_datos_dfd">Semana 4: Diagramas de Flujo de Datos (DFD)</a>
+<ul class="sectlevel2">
+<li><a href="#_introducción_3">Introducción</a></li>
+<li><a href="#_definición_3">Definición</a>
+<ul class="sectlevel3">
+<li><a href="#_dfd_concepto">DFD: concepto</a></li>
+</ul>
+</li>
+<li><a href="#_componentes_de_un_dfd">Componentes de un DFD</a>
+<ul class="sectlevel3">
+<li><a href="#_proceso">Proceso</a></li>
+<li><a href="#_flujo">Flujo</a></li>
+<li><a href="#_almacén">Almacén</a>
+<ul class="sectlevel4">
+<li><a href="#_tipos_de_flujos_en_almacenes">Tipos de flujos en almacenes</a></li>
+</ul>
+</li>
+<li><a href="#_terminador">Terminador</a></li>
+</ul>
+</li>
+<li><a href="#_reglas_para_construir_un_dfd">Reglas para construir un DFD</a>
+<ul class="sectlevel3">
+<li><a href="#_errores_a_evitar">Errores a evitar</a></li>
+<li><a href="#_estructura_de_niveles">Estructura de niveles</a></li>
+</ul>
+</li>
+<li><a href="#_ejemplo_almacenes_de_datos_del_sistema_de_hospedaje">Ejemplo: Almacenes de datos del sistema de hospedaje</a>
+<ul class="sectlevel3">
+<li><a href="#_a_qué_nos_referimos_con_almacenes_de_datos">¿A qué nos referimos con almacenes de datos?</a></li>
+<li><a href="#_almacenes_identificados">Almacenes identificados</a></li>
+</ul>
+</li>
+<li><a href="#_construcción_del_dfd_niveles">Construcción del DFD: Niveles</a>
+<ul class="sectlevel3">
+<li><a href="#_diagrama_de_contexto">Diagrama de contexto</a></li>
+<li><a href="#_diagrama_de_nivel_1">Diagrama de Nivel 1</a></li>
+<li><a href="#_diagrama_de_nivel_2">Diagrama de Nivel 2</a>
+<ul class="sectlevel4">
+<li><a href="#_ejemplo_nivel_2_solicitar_reserva">Ejemplo: Nivel 2 - "Solicitar reserva"</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_mapa_mental_diagramas_de_flujo_de_datos">Mapa mental: Diagramas de Flujo de Datos</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -2364,10 +2410,514 @@ El doctor Seprok vende la clínica a un grupo de más de 20 médicos que contin�
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_semana_4_diagramas_de_flujo_de_datos_dfd">Semana 4: Diagramas de Flujo de Datos (DFD)</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_introducción_3">Introducción</h3>
+<div class="paragraph">
+<p>Este recorrido busca, ante todo, que puedas profundizar en los diagramas de flujo de datos (DFD). Aquellos que se utilizaron por primera vez en la ingeniería de software como notación para el estudio del diseño de sistemas.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>¿Qué son? ¿Cómo se componen? ¿Cuáles son sus reglas?</p>
+</li>
+<li>
+<p>¿Qué es un almacén de datos?</p>
+</li>
+<li>
+<p>¿Cómo se construyen?</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Estos interrogantes se irán resolviendo a medida que avances por cada capítulo y subcapítulo de este material de lectura.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_definición_3">Definición</h3>
+<div class="sect3">
+<h4 id="_dfd_concepto">DFD: concepto</h4>
+<div class="paragraph">
+<p>Un <strong>diagrama de flujo de datos</strong> (DFD) es una herramienta de modelado de los procesos funcionales de un sistema.</p>
+</div>
+<div class="paragraph">
+<p>Este diagrama se caracteriza por ser una gráfica que se entiende con solo mirarla, su notación es sencilla y clara y, en cierto sentido, intuitiva. Además, permite representar gráficamente los límites del sistema y la lógica de los procesos, estableciendo qué funciones hay que desarrollar. También, muestra el flujo o movimiento de los datos a través del sistema y sus transformaciones como resultado de la ejecución de los procesos.</p>
+</div>
+<div class="paragraph">
+<p>Esta técnica consiste en la <strong>descomposición sucesiva de los procesos</strong>, desde un nivel general, hasta llegar al nivel de detalle necesario para reflejar toda la semántica que debe soportar el sistema en estudio.</p>
+</div>
+<div class="paragraph">
+<p>Para construir el diagrama, nos valemos de los siguientes elementos:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>El proceso</p>
+</li>
+<li>
+<p>El flujo</p>
+</li>
+<li>
+<p>El almacén de datos</p>
+</li>
+<li>
+<p>El terminador</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_componentes_de_un_dfd">Componentes de un DFD</h3>
+<div class="sect3">
+<h4 id="_proceso">Proceso</h4>
+<div class="paragraph">
+<p>Se representa gráficamente con un <strong>círculo</strong>, según Yourdon. Hay otros analistas que utilizan óvalo o rectángulo con esquinas redondeadas.</p>
+</div>
+<div class="paragraph">
+<p>Muestra una parte del sistema que transforma entradas en salidas. Puede recibir el nombre de burbuja, función o transformación.</p>
+</div>
+<div class="paragraph">
+<p>Recibe el nombre en base a la acción: <strong>verbo (infinitivo) + sustantivo (objeto)</strong>. Por ejemplo: "Procesar Inscripción", "Procesar Venta".</p>
+</div>
+<div class="paragraph">
+<p>Lleva numeración acorde al nivel de la gráfica:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Nivel 1</strong>: un número entero (1, 2, 3&#8230;&#8203;)</p>
+</li>
+<li>
+<p><strong>Nivel 2</strong>: formado por:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>El número de la burbuja del nivel anterior</p>
+</li>
+<li>
+<p>Un punto</p>
+</li>
+<li>
+<p>Otro número entero (indica la secuencialidad de las acciones)</p>
+</li>
+<li>
+<p>Ejemplo: 1.1, 1.2, 2.1, 2.2&#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_flujo">Flujo</h4>
+<div class="paragraph">
+<p>Representa <strong>datos en movimiento</strong>. La flecha muestra la dirección: según donde apunta, indica si la información está en movimiento hacia adentro o hacia afuera de un proceso.</p>
+</div>
+<div class="paragraph">
+<p>Este elemento se representa con una flecha que entra o sale de un proceso, describiendo el movimiento de paquetes de información de una parte del sistema a otra.</p>
+</div>
+<div class="paragraph">
+<p>Todo flujo debe llevar una <strong>leyenda</strong> que indique qué datos transporta o qué comunicación lleva entre procesos y almacenes.</p>
+</div>
+<div class="paragraph">
+<p>Un flujo de datos entre dos procesos solo es posible cuando la información es <strong>sincrónica</strong>, es decir, el proceso destino comienza cuando el proceso origen finaliza su función.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_almacén">Almacén</h4>
+<div class="paragraph">
+<p>Se utiliza para modelar una colección de datos que están <strong>en reposo</strong>. Se grafica con <strong>dos líneas paralelas</strong> y su nombre es el plural del paquete de datos que representa.</p>
+</div>
+<div class="paragraph">
+<p>El almacén <strong>no puede</strong> crear, transformar o destruir datos. No puede estar comunicado con otro almacén o entidad externa, y aparecerá por primera vez en aquel nivel en que dos o más procesos accedan a él.</p>
+</div>
+<div class="paragraph">
+<p>Los flujos conectados a un almacén solo pueden transportar paquetes de información que el almacén sea capaz de guardar.</p>
+</div>
+<div class="sect4">
+<h5 id="_tipos_de_flujos_en_almacenes">Tipos de flujos en almacenes</h5>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>De actualización:</strong> representan la alteración de los datos de un almacén como consecuencia de la creación de un nuevo elemento, por eliminación o modificación de otros ya existentes.</p>
+</li>
+<li>
+<p><strong>De consulta:</strong> representan la utilización de los valores de uno o más campos de un almacén o la comprobación de que los valores de los campos seleccionados cumplen unos criterios determinados.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_terminador">Terminador</h4>
+<div class="paragraph">
+<p>Representa un <strong>agente externo</strong> al sistema que proporciona o recibe información del mismo. Puede hacer referencia a departamentos, personas, máquinas, recursos u otros sistemas.</p>
+</div>
+<div class="paragraph">
+<p>Se representa con un <strong>rectángulo</strong>. Puede aparecer varias veces en un mismo diagrama, así como en los distintos niveles del DFD, para mejorar la claridad del diagrama.</p>
+</div>
+<div class="paragraph">
+<p>El estudio de las relaciones entre entidades externas no forma parte del modelo.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_reglas_para_construir_un_dfd">Reglas para construir un DFD</h3>
+<div class="paragraph">
+<p>La construcción del DFD sigue las siguientes reglas:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Denominación:</strong> se escoge un nombre con significado para los procesos, flujos, almacenes y terminadores.</p>
+</li>
+<li>
+<p><strong>Enumeración:</strong> se enumeran los procesos.</p>
+</li>
+<li>
+<p><strong>Rediseño:</strong> se redibuja el DFD tantas veces como sea necesario.</p>
+</li>
+<li>
+<p><strong>Simplificación:</strong> se evitan los DFD excesivamente complejos.</p>
+</li>
+<li>
+<p><strong>Coherencia:</strong> se asegura la consistencia interna.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_errores_a_evitar">Errores a evitar</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Sumideros infinitos:</strong> burbujas que tienen entradas pero no tienen salidas.</p>
+</li>
+<li>
+<p><strong>Burbujas de generación espontánea:</strong> aquellas que tienen salidas sin tener entradas.</p>
+</li>
+<li>
+<p><strong>Flujos y procesos no etiquetados.</strong></p>
+</li>
+<li>
+<p><strong>Almacenes que sean de "solo lectura" o "solo escritura"</strong>, salvo que lo requiera el análisis.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_estructura_de_niveles">Estructura de niveles</h4>
+<div class="paragraph">
+<p>La gráfica comienza con el <strong>contexto</strong>, que nos muestra el sistema completo con los terminadores y representa el objetivo general del sistema.</p>
+</div>
+<div class="paragraph">
+<p>Luego, se grafica el <strong>Nivel 1</strong> con cada uno de los procesos que contiene el sistema. Cada uno de estos procesos lleva una numeración diferente y se utiliza en el Nivel 2 cuando se detallan los pasos del proceso.</p>
+</div>
+<div class="paragraph">
+<p>Los <strong>almacenes</strong> aparecen recién a partir del Nivel 1, ya que los procesos necesitan de sus datos para transformar las entradas que reciben.</p>
+</div>
+<div class="paragraph">
+<p>Cuando se repite un terminador o un almacén, la gráfica lleva en el extremo superior izquierdo una línea para indicar que se trata del mismo terminador o almacén.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ejemplo_almacenes_de_datos_del_sistema_de_hospedaje">Ejemplo: Almacenes de datos del sistema de hospedaje</h3>
+<div class="sect3">
+<h4 id="_a_qué_nos_referimos_con_almacenes_de_datos">¿A qué nos referimos con almacenes de datos?</h4>
+<div class="paragraph">
+<p>Los almacenes de datos son una parte importante para la construcción de la gráfica, ya que los procesos deben buscar los datos necesarios para ejecutar sus acciones en función del flujo que reciben para devolverlo transformado.</p>
+</div>
+<div class="paragraph">
+<p>Vamos a seguir con el ejemplo del Hotel Newton Palace, que estudiamos en la semana 3, para crear nuestros almacenes.</p>
+</div>
+<div class="paragraph">
+<p>Lo primero es identificar los procesos que surgieron después de desagregar el objetivo, que en nuestro caso resultaron ser <strong>reserva</strong>, <strong>check in</strong> y <strong>check out</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Entonces, debemos contar con datos de:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>¿Quién hace reserva?</p>
+</li>
+<li>
+<p>¿Qué tipo de reserva?</p>
+</li>
+<li>
+<p>Cantidad de tiempo de hospedaje.</p>
+</li>
+<li>
+<p>Ingreso al hotel (día y horario).</p>
+</li>
+<li>
+<p>Egreso al hotel (fecha y hora).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Agrupamos los datos por su relación y le colocamos un nombre; ese nombre en plural es el que representa a cada uno de los almacenes del modelo.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_almacenes_identificados">Almacenes identificados</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Nombre</th>
+<th class="tableblock halign-left valign-top">Contenido</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cliente</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nro de cliente - Nombre - Apellido - Documento - Teléfono - Domicilio - e-mail</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Habitación</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nro de habitación - Nombre - Descripción - Precio por día - Ocupada (sí/no)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reserva</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nro de reserva - Cliente - Fecha de reserva - Fecha de ingreso - Fecha de egreso - Monto - Estado</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Detalle de la reserva</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nro de reserva - Nro de habitación</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Factura</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nro de factura - Cliente - Fecha - Monto final - Reserva (sí/no)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Detalle de la factura</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nro de detalle - Nro de factura - Descripción - Monto</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Factura de la reserva</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nro de factura - Nro de reserva</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ingreso</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nro de ingreso - Cliente - Fecha - Hora - Cantidad de huéspedes - Cochera (sí/no) - Reserva (sí/no) - Estado</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ingreso de reserva</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nro de ingreso - Nro de reserva</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Huésped</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nro de huésped - Nro de ingreso - Nro de cliente</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Consumo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nro de consumo - Nro de ingreso - Descripción - Monto</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cochera</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nro de cochera - Ubicación - Estado</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cochera de ingreso</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nro de ingreso - Nro de cochera - Fecha</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egreso</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nro de egreso - Nro de ingreso - Fecha - Monto final</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Devolución</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nro de devolución - Nro de reserva - Fecha de devolución - Monto</p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_construcción_del_dfd_niveles">Construcción del DFD: Niveles</h3>
+<div class="imageblock">
+<div class="content">
+<img src="./images/s4-construccion-dfd.png" alt="Construcción de un DFD">
+</div>
+</div>
+<div class="sect3">
+<h4 id="_diagrama_de_contexto">Diagrama de contexto</h4>
+<div class="paragraph">
+<p>El diagrama de contexto muestra el sistema como una <strong>única burbuja</strong> con los terminadores (entidades externas) y los flujos de entrada y salida. Representa el objetivo general del sistema.</p>
+</div>
+<div class="paragraph">
+<p>Para el caso del Hotel Newton Palace, el diagrama de contexto sería:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Burbuja central:</strong> "Administrar y gestionar la ocupación de las instalaciones"</p>
+</li>
+<li>
+<p><strong>Terminador:</strong> Huésped</p>
+</li>
+<li>
+<p><strong>Flujos de entrada:</strong> solicitud de reserva, datos de ingreso, solicitud de egreso</p>
+</li>
+<li>
+<p><strong>Flujos de salida:</strong> confirmación de reserva, comprobante de ingreso, factura</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>El contexto y cada burbuja del Nivel 1 tienen las <strong>mismas entradas y salidas</strong>. Es decir, todo lo que entra y sale del sistema en el contexto, se distribuye entre los procesos del Nivel 1.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_diagrama_de_nivel_1">Diagrama de Nivel 1</h4>
+<div class="paragraph">
+<p>Tomamos la burbuja del contexto y la expandimos mostrando los procesos internos, los almacenes de datos y los flujos entre ellos. Para el Nivel 1, cada proceso lleva un número entero (1, 2, 3&#8230;&#8203;).</p>
+</div>
+<div class="paragraph">
+<p>En el caso del Hotel Newton Palace, los procesos del Nivel 1 son:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Procesar reserva</strong></p>
+</li>
+<li>
+<p><strong>Procesar check-in</strong></p>
+</li>
+<li>
+<p><strong>Procesar check-out</strong></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Estos procesos se comunican entre sí a través de los almacenes de datos (Clientes, Habitaciones, Reservas, etc.) y no directamente entre ellos, salvo que la información sea sincrónica.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/s4-dfd-nivel1.png" alt="Diagrama de Nivel 1 del sistema de hospedaje">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_diagrama_de_nivel_2">Diagrama de Nivel 2</h4>
+<div class="paragraph">
+<p>Para graficar el Nivel 2:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Tomamos cada burbuja del Nivel 1.</p>
+</li>
+<li>
+<p>Detallamos las acciones que hacía para lograr la salida esperada.</p>
+</li>
+</ol>
+</div>
+<div class="sect4">
+<h5 id="_ejemplo_nivel_2_solicitar_reserva">Ejemplo: Nivel 2 - "Solicitar reserva"</h5>
+<div class="paragraph">
+<p>El diagrama del Nivel 2 para solicitar la reserva del Hotel Newton Palace funciona de esta manera:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Solicitud de reserva:</strong> el huésped realiza la solicitud.</p>
+</li>
+<li>
+<p><strong>Disponibilidad:</strong> se verifica si hay habitaciones disponibles.</p>
+</li>
+<li>
+<p><strong>Si hay disponibilidad:</strong> se procede al registro.</p>
+</li>
+<li>
+<p><strong>Si no hay disponibilidad:</strong> se informa al huésped.</p>
+</li>
+<li>
+<p><strong>Registro:</strong> se registra la reserva con los datos del huésped y la habitación.</p>
+</li>
+<li>
+<p><strong>Facturación:</strong> se genera la factura correspondiente a la reserva.</p>
+</li>
+</ol>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mapa_mental_diagramas_de_flujo_de_datos">Mapa mental: Diagramas de Flujo de Datos</h3>
+<div class="listingblock">
+<div class="content">
+<pre>graph TD
+
+A[Diagrama de Flujo de Datos - DFD] --&gt; B[Definición]
+A --&gt; C[Componentes]
+A --&gt; D[Reglas]
+A --&gt; E[Niveles]
+A --&gt; F[Almacenes de datos]
+
+B --&gt; B1[Herramienta de modelado]
+B --&gt; B2[Gráfica intuitiva]
+B --&gt; B3[Descomposición sucesiva]
+
+C --&gt; C1[Proceso - Círculo]
+C --&gt; C2[Flujo - Flecha]
+C --&gt; C3[Almacén - Líneas paralelas]
+C --&gt; C4[Terminador - Rectángulo]
+
+C1 --&gt; C1A[Verbo + Sustantivo]
+C1 --&gt; C1B[Numeración por nivel]
+
+C2 --&gt; C2A[Datos en movimiento]
+C2 --&gt; C2B[Debe llevar leyenda]
+
+C3 --&gt; C3A[Datos en reposo]
+C3 --&gt; C3B[Flujos de actualización]
+C3 --&gt; C3C[Flujos de consulta]
+
+C4 --&gt; C4A[Agente externo]
+C4 --&gt; C4B[Puede repetirse]
+
+D --&gt; D1[Denominación]
+D --&gt; D2[Enumeración]
+D --&gt; D3[Rediseño]
+D --&gt; D4[Simplificación]
+D --&gt; D5[Coherencia]
+
+D5 --&gt; D5A[Evitar sumideros infinitos]
+D5 --&gt; D5B[Evitar generación espontánea]
+D5 --&gt; D5C[Etiquetar todo]
+
+E --&gt; E1[Contexto - Sistema completo]
+E --&gt; E2[Nivel 1 - Procesos principales]
+E --&gt; E3[Nivel 2 - Detalle de cada proceso]
+
+F --&gt; F1[Identificar procesos]
+F --&gt; F2[Determinar datos necesarios]
+F --&gt; F3[Agrupar por relación]
+F --&gt; F4[Nombrar en plural]</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-04-12 21:26:25 UTC
+Last updated 2026-04-12 22:22:17 UTC
 </div>
 </div>
 <script type="text/x-mathjax-config">
