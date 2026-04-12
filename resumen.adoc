@@ -5,14 +5,56 @@
 :stem: 
 :stylesheet: daro-dark.css
 
+++++
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const toc = document.getElementById('toc');
+  if (!toc) return;
+  
+  // Find all TOC items with children
+  const tocItems = toc.querySelectorAll('li');
+  
+  tocItems.forEach(function(item) {
+    const childList = item.querySelector('ul');
+    if (childList) {
+      // Start with first level expanded, others collapsed
+      const isTopLevel = !item.parentElement.closest('li');
+      if (isTopLevel) {
+        item.classList.add('expanded');
+      }
+      
+      const link = item.querySelector('a');
+      if (link) {
+        link.addEventListener('click', function(e) {
+          // Only toggle if clicking the arrow area or if item has children
+          const rect = link.getBoundingClientRect();
+          const clickX = e.clientX - rect.left;
+          
+          // Toggle on any click for items with children
+          if (childList) {
+            e.preventDefault();
+            item.classList.toggle('expanded');
+          }
+        });
+      }
+    }
+  });
+});
+</script>
+++++
+
 = Practica profesional II
+
+== Recursos
+
+Link carpeta compartida: https://drive.google.com/drive/folders/1Bk50lhUOYjtEt5ZabE1BjXpu0W9Go7xt
+
 
 == Navegacion:
 
 - Desarrollo (lo que antes era el libro)
 - Oficina de practicas: es lo que tenemos que hacer
 - Lo mismo que se tiene arriba, se tiene abajo
-
 
 == Apertura
 
