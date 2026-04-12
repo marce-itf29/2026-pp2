@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e ':*)",
+      "WebFetch(domain:view.genially.com)",
+      "Bash(cp \"c:/documents-personal/terciario/2026-pp2/material/semana4-raw/S4-ML-Diagrama de flujo de datos_ Diagrama de nivel 1 del sistema de hospedaje _ DGHPEF.PNG\" \"c:/documents-personal/terciario/2026-pp2/images/s4-dfd-nivel1.png\")",
+      "Bash(cp \"c:/documents-personal/terciario/2026-pp2/material/semana4-raw/S4-ML-Diagrama de flujo de datos_ Ejemplo de almacenes de datos del sistema de hospedaje _ DGHPEF.PNG\" \"c:/documents-personal/terciario/2026-pp2/images/s4-construccion-dfd.png\")"
+    ]
+  }
+}

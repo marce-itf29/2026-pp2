@@ -1044,3 +1044,297 @@ A continuación te proponemos una serie de preguntas que consolidan el cuestiona
 . Los consumos realizados en la habitación ¿se abonan en el momento o se cargan en la cuenta del/la responsable del hospedaje?
 . ¿El/la titular del hospedaje deja los datos de una tarjeta como garantía de pago?
 . Si el/la huésped no desea la limpieza de la habitación, ¿cómo se procede?
+
+
+== Semana 4: Diagramas de Flujo de Datos (DFD)
+
+=== Introducción
+
+Este recorrido busca, ante todo, que puedas profundizar en los diagramas de flujo de datos (DFD). Aquellos que se utilizaron por primera vez en la ingeniería de software como notación para el estudio del diseño de sistemas.
+
+* ¿Qué son? ¿Cómo se componen? ¿Cuáles son sus reglas?
+* ¿Qué es un almacén de datos?
+* ¿Cómo se construyen?
+
+Estos interrogantes se irán resolviendo a medida que avances por cada capítulo y subcapítulo de este material de lectura.
+
+---
+
+=== Definición
+
+==== DFD: concepto
+
+Un *diagrama de flujo de datos* (DFD) es una herramienta de modelado de los procesos funcionales de un sistema.
+
+Este diagrama se caracteriza por ser una gráfica que se entiende con solo mirarla, su notación es sencilla y clara y, en cierto sentido, intuitiva. Además, permite representar gráficamente los límites del sistema y la lógica de los procesos, estableciendo qué funciones hay que desarrollar. También, muestra el flujo o movimiento de los datos a través del sistema y sus transformaciones como resultado de la ejecución de los procesos.
+
+Esta técnica consiste en la *descomposición sucesiva de los procesos*, desde un nivel general, hasta llegar al nivel de detalle necesario para reflejar toda la semántica que debe soportar el sistema en estudio.
+
+Para construir el diagrama, nos valemos de los siguientes elementos:
+
+* El proceso
+* El flujo
+* El almacén de datos
+* El terminador
+
+---
+
+=== Componentes de un DFD
+
+==== Proceso
+
+Se representa gráficamente con un *círculo*, según Yourdon. Hay otros analistas que utilizan óvalo o rectángulo con esquinas redondeadas.
+
+Muestra una parte del sistema que transforma entradas en salidas. Puede recibir el nombre de burbuja, función o transformación.
+
+Recibe el nombre en base a la acción: *verbo (infinitivo) + sustantivo (objeto)*. Por ejemplo: "Procesar Inscripción", "Procesar Venta".
+
+Lleva numeración acorde al nivel de la gráfica:
+
+* *Nivel 1*: un número entero (1, 2, 3...)
+* *Nivel 2*: formado por:
+** El número de la burbuja del nivel anterior
+** Un punto
+** Otro número entero (indica la secuencialidad de las acciones)
+** Ejemplo: 1.1, 1.2, 2.1, 2.2...
+
+==== Flujo
+
+Representa *datos en movimiento*. La flecha muestra la dirección: según donde apunta, indica si la información está en movimiento hacia adentro o hacia afuera de un proceso.
+
+Este elemento se representa con una flecha que entra o sale de un proceso, describiendo el movimiento de paquetes de información de una parte del sistema a otra.
+
+Todo flujo debe llevar una *leyenda* que indique qué datos transporta o qué comunicación lleva entre procesos y almacenes.
+
+Un flujo de datos entre dos procesos solo es posible cuando la información es *sincrónica*, es decir, el proceso destino comienza cuando el proceso origen finaliza su función.
+
+==== Almacén
+
+Se utiliza para modelar una colección de datos que están *en reposo*. Se grafica con *dos líneas paralelas* y su nombre es el plural del paquete de datos que representa.
+
+El almacén *no puede* crear, transformar o destruir datos. No puede estar comunicado con otro almacén o entidad externa, y aparecerá por primera vez en aquel nivel en que dos o más procesos accedan a él.
+
+Los flujos conectados a un almacén solo pueden transportar paquetes de información que el almacén sea capaz de guardar.
+
+===== Tipos de flujos en almacenes
+
+* *De actualización:* representan la alteración de los datos de un almacén como consecuencia de la creación de un nuevo elemento, por eliminación o modificación de otros ya existentes.
+* *De consulta:* representan la utilización de los valores de uno o más campos de un almacén o la comprobación de que los valores de los campos seleccionados cumplen unos criterios determinados.
+
+==== Terminador
+
+Representa un *agente externo* al sistema que proporciona o recibe información del mismo. Puede hacer referencia a departamentos, personas, máquinas, recursos u otros sistemas.
+
+Se representa con un *rectángulo*. Puede aparecer varias veces en un mismo diagrama, así como en los distintos niveles del DFD, para mejorar la claridad del diagrama.
+
+El estudio de las relaciones entre entidades externas no forma parte del modelo.
+
+---
+
+=== Reglas para construir un DFD
+
+La construcción del DFD sigue las siguientes reglas:
+
+* *Denominación:* se escoge un nombre con significado para los procesos, flujos, almacenes y terminadores.
+* *Enumeración:* se enumeran los procesos.
+* *Rediseño:* se redibuja el DFD tantas veces como sea necesario.
+* *Simplificación:* se evitan los DFD excesivamente complejos.
+* *Coherencia:* se asegura la consistencia interna.
+
+==== Errores a evitar
+
+* *Sumideros infinitos:* burbujas que tienen entradas pero no tienen salidas.
+* *Burbujas de generación espontánea:* aquellas que tienen salidas sin tener entradas.
+* *Flujos y procesos no etiquetados.*
+* *Almacenes que sean de "solo lectura" o "solo escritura"*, salvo que lo requiera el análisis.
+
+==== Estructura de niveles
+
+La gráfica comienza con el *contexto*, que nos muestra el sistema completo con los terminadores y representa el objetivo general del sistema.
+
+Luego, se grafica el *Nivel 1* con cada uno de los procesos que contiene el sistema. Cada uno de estos procesos lleva una numeración diferente y se utiliza en el Nivel 2 cuando se detallan los pasos del proceso.
+
+Los *almacenes* aparecen recién a partir del Nivel 1, ya que los procesos necesitan de sus datos para transformar las entradas que reciben.
+
+Cuando se repite un terminador o un almacén, la gráfica lleva en el extremo superior izquierdo una línea para indicar que se trata del mismo terminador o almacén.
+
+---
+
+=== Ejemplo: Almacenes de datos del sistema de hospedaje
+
+==== ¿A qué nos referimos con almacenes de datos?
+
+Los almacenes de datos son una parte importante para la construcción de la gráfica, ya que los procesos deben buscar los datos necesarios para ejecutar sus acciones en función del flujo que reciben para devolverlo transformado.
+
+Vamos a seguir con el ejemplo del Hotel Newton Palace, que estudiamos en la semana 3, para crear nuestros almacenes.
+
+Lo primero es identificar los procesos que surgieron después de desagregar el objetivo, que en nuestro caso resultaron ser *reserva*, *check in* y *check out*.
+
+Entonces, debemos contar con datos de:
+
+* ¿Quién hace reserva?
+* ¿Qué tipo de reserva?
+* Cantidad de tiempo de hospedaje.
+* Ingreso al hotel (día y horario).
+* Egreso al hotel (fecha y hora).
+
+Agrupamos los datos por su relación y le colocamos un nombre; ese nombre en plural es el que representa a cada uno de los almacenes del modelo.
+
+==== Almacenes identificados
+
+[cols="1,3", options="header"]
+|===
+| Nombre | Contenido
+
+| Cliente
+| Nro de cliente - Nombre - Apellido - Documento - Teléfono - Domicilio - e-mail
+
+| Habitación
+| Nro de habitación - Nombre - Descripción - Precio por día - Ocupada (sí/no)
+
+| Reserva
+| Nro de reserva - Cliente - Fecha de reserva - Fecha de ingreso - Fecha de egreso - Monto - Estado
+
+| Detalle de la reserva
+| Nro de reserva - Nro de habitación
+
+| Factura
+| Nro de factura - Cliente - Fecha - Monto final - Reserva (sí/no)
+
+| Detalle de la factura
+| Nro de detalle - Nro de factura - Descripción - Monto
+
+| Factura de la reserva
+| Nro de factura - Nro de reserva
+
+| Ingreso
+| Nro de ingreso - Cliente - Fecha - Hora - Cantidad de huéspedes - Cochera (sí/no) - Reserva (sí/no) - Estado
+
+| Ingreso de reserva
+| Nro de ingreso - Nro de reserva
+
+| Huésped
+| Nro de huésped - Nro de ingreso - Nro de cliente
+
+| Consumo
+| Nro de consumo - Nro de ingreso - Descripción - Monto
+
+| Cochera
+| Nro de cochera - Ubicación - Estado
+
+| Cochera de ingreso
+| Nro de ingreso - Nro de cochera - Fecha
+
+| Egreso
+| Nro de egreso - Nro de ingreso - Fecha - Monto final
+
+| Devolución
+| Nro de devolución - Nro de reserva - Fecha de devolución - Monto
+|===
+
+---
+
+=== Construcción del DFD: Niveles
+
+image::s4-construccion-dfd.png[Construcción de un DFD]
+
+==== Diagrama de contexto
+
+El diagrama de contexto muestra el sistema como una *única burbuja* con los terminadores (entidades externas) y los flujos de entrada y salida. Representa el objetivo general del sistema.
+
+Para el caso del Hotel Newton Palace, el diagrama de contexto sería:
+
+* *Burbuja central:* "Administrar y gestionar la ocupación de las instalaciones"
+* *Terminador:* Huésped
+* *Flujos de entrada:* solicitud de reserva, datos de ingreso, solicitud de egreso
+* *Flujos de salida:* confirmación de reserva, comprobante de ingreso, factura
+
+El contexto y cada burbuja del Nivel 1 tienen las *mismas entradas y salidas*. Es decir, todo lo que entra y sale del sistema en el contexto, se distribuye entre los procesos del Nivel 1.
+
+==== Diagrama de Nivel 1
+
+Tomamos la burbuja del contexto y la expandimos mostrando los procesos internos, los almacenes de datos y los flujos entre ellos. Para el Nivel 1, cada proceso lleva un número entero (1, 2, 3...).
+
+En el caso del Hotel Newton Palace, los procesos del Nivel 1 son:
+
+. *Procesar reserva*
+. *Procesar check-in*
+. *Procesar check-out*
+
+Estos procesos se comunican entre sí a través de los almacenes de datos (Clientes, Habitaciones, Reservas, etc.) y no directamente entre ellos, salvo que la información sea sincrónica.
+
+image::s4-dfd-nivel1.png[Diagrama de Nivel 1 del sistema de hospedaje]
+
+==== Diagrama de Nivel 2
+
+Para graficar el Nivel 2:
+
+. Tomamos cada burbuja del Nivel 1.
+. Detallamos las acciones que hacía para lograr la salida esperada.
+
+===== Ejemplo: Nivel 2 - "Solicitar reserva"
+
+El diagrama del Nivel 2 para solicitar la reserva del Hotel Newton Palace funciona de esta manera:
+
+. *Solicitud de reserva:* el huésped realiza la solicitud.
+. *Disponibilidad:* se verifica si hay habitaciones disponibles.
+. *Si hay disponibilidad:* se procede al registro.
+. *Si no hay disponibilidad:* se informa al huésped.
+. *Registro:* se registra la reserva con los datos del huésped y la habitación.
+. *Facturación:* se genera la factura correspondiente a la reserva.
+
+---
+
+=== Mapa mental: Diagramas de Flujo de Datos
+
+[mermaid]
+----
+graph TD
+
+A[Diagrama de Flujo de Datos - DFD] --> B[Definición]
+A --> C[Componentes]
+A --> D[Reglas]
+A --> E[Niveles]
+A --> F[Almacenes de datos]
+
+B --> B1[Herramienta de modelado]
+B --> B2[Gráfica intuitiva]
+B --> B3[Descomposición sucesiva]
+
+C --> C1[Proceso - Círculo]
+C --> C2[Flujo - Flecha]
+C --> C3[Almacén - Líneas paralelas]
+C --> C4[Terminador - Rectángulo]
+
+C1 --> C1A[Verbo + Sustantivo]
+C1 --> C1B[Numeración por nivel]
+
+C2 --> C2A[Datos en movimiento]
+C2 --> C2B[Debe llevar leyenda]
+
+C3 --> C3A[Datos en reposo]
+C3 --> C3B[Flujos de actualización]
+C3 --> C3C[Flujos de consulta]
+
+C4 --> C4A[Agente externo]
+C4 --> C4B[Puede repetirse]
+
+D --> D1[Denominación]
+D --> D2[Enumeración]
+D --> D3[Rediseño]
+D --> D4[Simplificación]
+D --> D5[Coherencia]
+
+D5 --> D5A[Evitar sumideros infinitos]
+D5 --> D5B[Evitar generación espontánea]
+D5 --> D5C[Etiquetar todo]
+
+E --> E1[Contexto - Sistema completo]
+E --> E2[Nivel 1 - Procesos principales]
+E --> E3[Nivel 2 - Detalle de cada proceso]
+
+F --> F1[Identificar procesos]
+F --> F2[Determinar datos necesarios]
+F --> F3[Agrupar por relación]
+F --> F4[Nombrar en plural]
+----
