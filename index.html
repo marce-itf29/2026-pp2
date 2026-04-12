@@ -121,10 +121,12 @@ a {
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Practica profesional II</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Practica profesional II</div>
+<ul class="sectlevel0">
+<li><a href="#_practica_profesional_ii">Practica profesional II</a>
 <ul class="sectlevel1">
+<li><a href="#_recursos">Recursos</a></li>
 <li><a href="#_navegacion">Navegacion:</a></li>
 <li><a href="#_apertura">Apertura</a></li>
 <li><a href="#_semana_1">Semana 1</a>
@@ -298,9 +300,55 @@ a {
 </ul>
 </li>
 </ul>
+</li>
+</ul>
 </div>
 </div>
 <div id="content">
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const toc = document.getElementById('toc');
+  if (!toc) return;
+
+  // Find all TOC items with children
+  const tocItems = toc.querySelectorAll('li');
+
+  tocItems.forEach(function(item) {
+    const childList = item.querySelector('ul');
+    if (childList) {
+      // Start with first level expanded, others collapsed
+      const isTopLevel = !item.parentElement.closest('li');
+      if (isTopLevel) {
+        item.classList.add('expanded');
+      }
+
+      const link = item.querySelector('a');
+      if (link) {
+        link.addEventListener('click', function(e) {
+          // Only toggle if clicking the arrow area or if item has children
+          const rect = link.getBoundingClientRect();
+          const clickX = e.clientX - rect.left;
+
+          // Toggle on any click for items with children
+          if (childList) {
+            e.preventDefault();
+            item.classList.toggle('expanded');
+          }
+        });
+      }
+    }
+  });
+});
+</script>
+<h1 id="_practica_profesional_ii" class="sect0">Practica profesional II</h1>
+<div class="sect1">
+<h2 id="_recursos">Recursos</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Link carpeta compartida: <a href="https://drive.google.com/drive/folders/1Bk50lhUOYjtEt5ZabE1BjXpu0W9Go7xt" class="bare">https://drive.google.com/drive/folders/1Bk50lhUOYjtEt5ZabE1BjXpu0W9Go7xt</a></p>
+</div>
+</div>
+</div>
 <div class="sect1">
 <h2 id="_navegacion">Navegacion:</h2>
 <div class="sectionbody">
@@ -2213,7 +2261,7 @@ El doctor Seprok vende la clínica a un grupo de más de 20 médicos que contin�
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-04-04 03:33:07 UTC
+Last updated 2026-04-12 19:03:31 UTC
 </div>
 </div>
 <script type="text/x-mathjax-config">
