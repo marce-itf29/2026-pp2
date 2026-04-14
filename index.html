@@ -451,6 +451,36 @@ a {
 <li><a href="#_mapa_mental_diagramas_de_flujo_de_datos">Mapa mental: Diagramas de Flujo de Datos</a></li>
 </ul>
 </li>
+<li><a href="#_semana_5_scrum">Semana 5 - SCRUM</a>
+<ul class="sectlevel2">
+<li><a href="#_introduccion">Introduccion</a></li>
+<li><a href="#_que_caracteriza_a_scrum">¿Que caracteriza a SCRUM?</a></li>
+<li><a href="#_enfoque_de_trabajo_en_scrum">Enfoque de trabajo en Scrum</a></li>
+<li><a href="#_historia_de_usuario">Historia de usuario</a></li>
+<li><a href="#_registro_de_la_documentacion">Registro de la documentacion</a></li>
+<li><a href="#_ejemplo_de_historia_de_usuario_sistema_de_hospedaje">Ejemplo de historia de usuario (Sistema de hospedaje)</a></li>
+<li><a href="#_sprint_planning">Sprint Planning</a></li>
+<li><a href="#_scrum_explicado_con_analogia_de_formula_1">Scrum explicado con analogia de Formula 1</a>
+<ul class="sectlevel3">
+<li><a href="#_1_planificacion_del_sprint">1. Planificacion del Sprint</a></li>
+<li><a href="#_2_sprint">2. Sprint</a></li>
+<li><a href="#_3_daily_scrum">3. Daily Scrum</a></li>
+<li><a href="#_4_sprint_review">4. Sprint Review</a></li>
+<li><a href="#_5_sprint_retrospective">5. Sprint Retrospective</a></li>
+</ul>
+</li>
+<li><a href="#_componentes_de_scrum">Componentes de Scrum</a>
+<ul class="sectlevel3">
+<li><a href="#_roles">Roles</a></li>
+<li><a href="#_artefactos">Artefactos</a></li>
+<li><a href="#_eventos">Eventos</a></li>
+<li><a href="#_proceso_general">Proceso general</a></li>
+</ul>
+</li>
+<li><a href="#_como_comenzar_con_scrum">¿Como comenzar con SCRUM?</a></li>
+<li><a href="#_cierre">Cierre</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -2867,10 +2897,581 @@ El doctor Seprok vende la clínica a un grupo de más de 20 médicos que contin�
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_semana_5_scrum">Semana 5 - SCRUM</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_introduccion">Introduccion</h3>
+<div class="paragraph">
+<p>Durante esta semana podras introducirte en las metodologias agiles, principalmente en Scrum.</p>
+</div>
+<div class="paragraph">
+<p>Scrum propone un enfoque iterativo e incremental, donde el trabajo se organiza en ciclos cortos llamados <strong>Sprints</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Se basa en principios como:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Las personas sobre los procesos</p>
+</li>
+<li>
+<p>Software funcionando sobre documentacion extensa</p>
+</li>
+<li>
+<p>Colaboracion con el cliente</p>
+</li>
+<li>
+<p>Adaptacion al cambio</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_que_caracteriza_a_scrum">¿Que caracteriza a SCRUM?</h3>
+<div class="paragraph">
+<p>Scrum se consolida como metodologia por las siguientes caracteristicas:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Enfoque en la forma de trabajo real</strong>: se adapta a como trabajan las personas en la practica.</p>
+</li>
+<li>
+<p><strong>Sprints</strong>: ciclos cortos (generalmente 2 semanas) donde se entrega valor.</p>
+</li>
+<li>
+<p><strong>Inspeccion y adaptacion</strong>: revision constante del progreso.</p>
+</li>
+<li>
+<p><strong>Trabajo en equipo</strong>: colaboracion continua entre los integrantes.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_enfoque_de_trabajo_en_scrum">Enfoque de trabajo en Scrum</h3>
+<div class="paragraph">
+<p>En los enfoques tradicionales, el trabajo suele organizarse de forma secuencial (tipo cascada), donde cada etapa depende de la anterior.</p>
+</div>
+<div class="paragraph">
+<p>Scrum propone un enfoque diferente, basado en la colaboracion, la iteracion y la adaptacion constante.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="./images/scrum_equipo_vs_tradicional.png" alt="Trabajo tradicional vs Scrum">
+</div>
+</div>
+<div class="paragraph">
+<p>En lugar de separar el trabajo por etapas aisladas (analisis, diseño, desarrollo, testing), Scrum promueve:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Trabajo en equipo simultaneo</p>
+</li>
+<li>
+<p>Colaboracion constante</p>
+</li>
+<li>
+<p>Feedback continuo</p>
+</li>
+<li>
+<p>Mejora iterativa</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Esto permite adaptarse rapidamente a cambios y entregar valor de forma incremental.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_historia_de_usuario">Historia de usuario</h3>
+<div class="paragraph">
+<p>Las historias de usuario definen funcionalidades desde el punto de vista del usuario.</p>
+</div>
+<div class="paragraph">
+<p>Para construirlas correctamente se debe considerar:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Colaboracion entre equipo y Product Owner</p>
+</li>
+<li>
+<p>Redaccion clara</p>
+</li>
+<li>
+<p>Comprension de las necesidades del usuario</p>
+</li>
+<li>
+<p>Construccion del Product Backlog</p>
+</li>
+<li>
+<p>Identificacion del usuario</p>
+</li>
+<li>
+<p>Responsabilidad del Product Owner</p>
+</li>
+<li>
+<p>Gestion del backlog</p>
+</li>
+<li>
+<p>Flexibilidad</p>
+</li>
+<li>
+<p>Trabajo colaborativo</p>
+</li>
+</ol>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_registro_de_la_documentacion">Registro de la documentacion</h3>
+<div class="paragraph">
+<p>Una historia de usuario suele contener:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Campo</th>
+<th class="tableblock halign-left valign-top">Descripcion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identificador de la historia</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rol</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo de usuario</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Caracteristica</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Accion que realiza el usuario</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Razon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Resultado esperado</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Escenario</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cantidad de escenarios</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Criterio de aceptacion</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Condiciones a cumplir</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contexto</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Situacion inicial</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evento</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Accion realizada</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Resultado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comportamiento esperado</p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_ejemplo_de_historia_de_usuario_sistema_de_hospedaje">Ejemplo de historia de usuario (Sistema de hospedaje)</h3>
+<div class="paragraph">
+<p>Ejemplo simplificado:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reservar habitaciones</p>
+</li>
+<li>
+<p>Cancelar reservas</p>
+</li>
+<li>
+<p>Registrar ingreso</p>
+</li>
+<li>
+<p>Registrar egreso</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Cada una incluye escenarios posibles (exito / error) y resultados esperados.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_sprint_planning">Sprint Planning</h3>
+<div class="paragraph">
+<p>El Sprint Planning es una reunion inicial donde:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Se define el objetivo del Sprint</p>
+</li>
+<li>
+<p>Se seleccionan historias del backlog</p>
+</li>
+<li>
+<p>Se estiman tareas</p>
+</li>
+<li>
+<p>Se arma el Sprint Backlog</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Participan:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Product Owner</p>
+</li>
+<li>
+<p>Scrum Master</p>
+</li>
+<li>
+<p>Equipo de desarrollo</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Resultado:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Sprint Backlog definido</p>
+</li>
+<li>
+<p>Historias asignadas</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_scrum_explicado_con_analogia_de_formula_1">Scrum explicado con analogia de Formula 1</h3>
+<div class="sect3">
+<h4 id="_1_planificacion_del_sprint">1. Planificacion del Sprint</h4>
+<div class="paragraph">
+<p>Antes de la carrera:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Se definen objetivos</p>
+</li>
+<li>
+<p>Se planifican estrategias</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_2_sprint">2. Sprint</h4>
+<div class="paragraph">
+<p>Durante la carrera:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>El equipo ejecuta el trabajo</p>
+</li>
+<li>
+<p>Se busca el mejor rendimiento posible</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_3_daily_scrum">3. Daily Scrum</h4>
+<div class="paragraph">
+<p>Durante la carrera (pit stop):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reuniones breves</p>
+</li>
+<li>
+<p>Evaluacion del progreso</p>
+</li>
+<li>
+<p>Ajuste de estrategias</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_4_sprint_review">4. Sprint Review</h4>
+<div class="paragraph">
+<p>Al finalizar:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Se analiza lo logrado</p>
+</li>
+<li>
+<p>Se obtiene feedback</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_5_sprint_retrospective">5. Sprint Retrospective</h4>
+<div class="paragraph">
+<p>Entre carreras:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Se reflexiona sobre el proceso</p>
+</li>
+<li>
+<p>Se proponen mejoras</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_componentes_de_scrum">Componentes de Scrum</h3>
+<div class="sect3">
+<h4 id="_roles">Roles</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Product Owner</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Define prioridades</p>
+</li>
+<li>
+<p>Gestiona el backlog</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Scrum Master</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Facilita el proceso</p>
+</li>
+<li>
+<p>Elimina impedimentos</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Equipo de desarrollo</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Construye el producto</p>
+</li>
+<li>
+<p>Organiza el trabajo</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Stakeholders</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Observan y aportan feedback</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="_artefactos">Artefactos</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Product Backlog</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Lista priorizada de requerimientos</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Sprint Backlog</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Trabajo seleccionado para el Sprint</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Incremento</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Version funcional del producto</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="_eventos">Eventos</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Sprint Planning</p>
+</li>
+<li>
+<p>Daily Scrum</p>
+</li>
+<li>
+<p>Sprint Review</p>
+</li>
+<li>
+<p>Sprint Retrospective</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="_proceso_general">Proceso general</h4>
+<div class="paragraph">
+<p>Ciclo continuo:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Product Backlog</p>
+</li>
+<li>
+<p>Sprint Planning</p>
+</li>
+<li>
+<p>Sprint</p>
+</li>
+<li>
+<p>Incremento</p>
+</li>
+<li>
+<p>Review</p>
+</li>
+<li>
+<p>Retrospective</p>
+</li>
+<li>
+<p>Repetir</p>
+</li>
+</ol>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_como_comenzar_con_scrum">¿Como comenzar con SCRUM?</h3>
+<div class="paragraph">
+<p>Para implementar Scrum se debe:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Analizar la organizacion actual</p>
+</li>
+<li>
+<p>Entender procesos existentes</p>
+</li>
+<li>
+<p>Evaluar calidad actual</p>
+</li>
+<li>
+<p>Detectar obstaculos</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Ademas:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Definir roles</p>
+</li>
+<li>
+<p>Identificar recursos</p>
+</li>
+<li>
+<p>Armar equipos de trabajo</p>
+</li>
+<li>
+<p>Definir objetivos claros</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_cierre">Cierre</h3>
+<div class="paragraph">
+<p>Scrum permite:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Adaptarse rapidamente a cambios</p>
+</li>
+<li>
+<p>Entregar valor en forma continua</p>
+</li>
+<li>
+<p>Mejorar procesos mediante retroalimentacion</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Es una metodologia centrada en las personas y en la mejora continua.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-04-13 00:20:52 UTC
+Last updated 2026-04-14 01:46:11 UTC
 </div>
 </div>
 <script type="text/x-mathjax-config">
