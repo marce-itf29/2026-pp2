@@ -1289,164 +1289,257 @@ El diagrama del Nivel 2 para solicitar la reserva del Hotel Newton Palace funcio
 
 image::semana04.01.png[]
 
-== Semana 5 - SCRUM
+== Semana 5 - Scrum
 
 === Introduccion
 
-Durante esta semana podras introducirte en las metodologias agiles, principalmente en Scrum.
+Durante esta semana se trabaja el enfoque de las metodologias agiles, especialmente Scrum, como marco de trabajo para organizar y desarrollar productos de manera iterativa e incremental.
 
-Scrum propone un enfoque iterativo e incremental, donde el trabajo se organiza en ciclos cortos llamados *Sprints*.
+Scrum parte de la idea de que no siempre es posible definir todo al comienzo con total certeza. Por eso propone ciclos cortos de trabajo, entregas frecuentes, revision constante y capacidad de adaptacion frente a cambios.
 
-Se basa en principios como:
+En este enfoque se prioriza:
 
-* Las personas sobre los procesos
-* Software funcionando sobre documentacion extensa
-* Colaboracion con el cliente
-* Adaptacion al cambio
+* Las personas y sus interacciones
+* El producto funcionando
+* La colaboracion con el cliente o usuario
+* La respuesta al cambio
 
 ---
 
-=== ¿Que caracteriza a SCRUM?
+=== ¿Que caracteriza a Scrum?
 
-Scrum se consolida como metodologia por las siguientes caracteristicas:
+A partir de los aportes de Sutherland y de su adopcion en distintos contextos de trabajo, Scrum se consolida a partir de las siguientes caracteristicas:
 
-* *Enfoque en la forma de trabajo real*: se adapta a como trabajan las personas en la practica.
-* *Sprints*: ciclos cortos (generalmente 2 semanas) donde se entrega valor.
-* *Inspeccion y adaptacion*: revision constante del progreso.
-* *Trabajo en equipo*: colaboracion continua entre los integrantes.
+* *Enfoque en la forma en que la gente trabaja*: Scrum se diferencia de los enfoques de planificacion en cascada porque se centra en la realidad de como trabajan las personas, y no en como deberian trabajar en teoria.
+* *Ciclos de trabajo breves*: utiliza ciclos cortos llamados *Sprints*, en los que el equipo desarrolla un conjunto de tareas definidas y al final obtiene una mejora del producto que puede mostrarse.
+* *Inspeccion y adaptacion*: promueve revisiones frecuentes para verificar si el trabajo avanza en la direccion correcta y para realizar ajustes cuando sea necesario.
+* *Trabajo en equipo*: pone el foco en la colaboracion continua entre las personas involucradas en el desarrollo.
 
 ---
 
 === Enfoque de trabajo en Scrum
 
-En los enfoques tradicionales, el trabajo suele organizarse de forma secuencial (tipo cascada), donde cada etapa depende de la anterior.
-
-Scrum propone un enfoque diferente, basado en la colaboracion, la iteracion y la adaptacion constante.
+En los enfoques tradicionales, el trabajo suele organizarse en etapas separadas y sucesivas. Scrum, en cambio, propone un trabajo colaborativo, iterativo y con retroalimentacion permanente.
 
 image::scrum_equipo_vs_tradicional.png[Trabajo tradicional vs Scrum, align="center"]
 
-En lugar de separar el trabajo por etapas aisladas (analisis, diseño, desarrollo, testing), Scrum promueve:
+En lugar de dividir estrictamente el trabajo en analisis, diseño, desarrollo y pruebas como compartimentos aislados, Scrum favorece:
 
-* Trabajo en equipo simultaneo
-* Colaboracion constante
+* Trabajo simultaneo entre integrantes del equipo
+* Colaboracion permanente
 * Feedback continuo
-* Mejora iterativa
+* Revision y mejora iterativa
 
-Esto permite adaptarse rapidamente a cambios y entregar valor de forma incremental.
+Este enfoque permite adaptarse con mayor rapidez y entregar valor de manera incremental.
 
 ---
 
 === Historia de usuario
 
-Las historias de usuario definen funcionalidades desde el punto de vista del usuario.
+Las historias de usuario son una forma de documentar necesidades o funcionalidades desde el punto de vista del usuario.
 
-Para construirlas correctamente se debe considerar:
+Su construccion no consiste solamente en escribir una frase corta. Implica comprender que necesita el usuario, que valor espera obtener y como se registra esa necesidad dentro del trabajo del equipo.
 
-. Colaboracion entre equipo y Product Owner
-. Redaccion clara
-. Comprension de las necesidades del usuario
-. Construccion del Product Backlog
-. Identificacion del usuario
-. Responsabilidad del Product Owner
-. Gestion del backlog
-. Flexibilidad
-. Trabajo colaborativo
+Para construir historias de usuario se consideran aspectos como:
+
+. El trabajo colaborativo entre quienes participan del proyecto
+. La intervencion del Product Owner en la definicion de prioridades
+. La comprension de las necesidades del usuario
+. La organizacion del trabajo dentro del Product Backlog
+. La identificacion clara del rol involucrado
+. La posibilidad de ajustar o refinar historias
+. La definicion de criterios de aceptacion
+. La descripcion del contexto, el evento y el resultado esperado
 
 ---
 
 === Registro de la documentacion
 
-Una historia de usuario suele contener:
+Una historia de usuario puede registrarse con campos como los siguientes:
 
-[cols="1,2"]
+[cols="1,2", options="header"]
 |===
 |Campo |Descripcion
 
-|ID |Identificador de la historia
-|Rol |Tipo de usuario
-|Caracteristica |Accion que realiza el usuario
-|Razon |Resultado esperado
-|Escenario |Cantidad de escenarios
-|Criterio de aceptacion |Condiciones a cumplir
-|Contexto |Situacion inicial
-|Evento |Accion realizada
-|Resultado |Comportamiento esperado
+|ID
+|Identificador de la historia de usuario
+
+|Rol
+|Tipo de usuario o actor que realiza la accion
+
+|Caracteristica / Funcionalidad
+|Accion, necesidad o funcionalidad que requiere el usuario
+
+|Razon / Resultado
+|Beneficio, finalidad o resultado esperado
+
+|N° de escenario
+|Cantidad o numero de escenario contemplado
+
+|Criterio de aceptacion
+|Condicion que debe cumplirse para considerar valido el escenario
+
+|Contexto
+|Situacion previa o estado en el que se encuentra el sistema o proceso
+
+|Evento
+|Accion o hecho que desencadena el comportamiento esperado
+
+|Resultado / Comportamiento esperado
+|Respuesta o efecto esperado del sistema
 |===
 
 ---
 
 === Ejemplo de historia de usuario (Sistema de hospedaje)
 
-Ejemplo simplificado:
+A continuacion se presenta un ejemplo desarrollado con varias historias de usuario vinculadas al sistema de hospedaje.
 
-* Reservar habitaciones
-* Cancelar reservas
-* Registrar ingreso
-* Registrar egreso
+[cols="1,1,2,2,1,2,2,2,2", options="header"]
+|===
+|ID |Rol |Caracteristicas / Funcionalidad |Razon / Resultado |N° de Escenario |Criterio de Aceptacion |Contexto |Evento |Resultado / Comportamiento esperado
 
-Cada una incluye escenarios posibles (exito / error) y resultados esperados.
+|1
+|Recepcion
+|Reservar en un periodo determinado habitaciones para una cantidad especifica de huespedes
+|Reserva de hospedaje
+|1
+|Existen habitaciones para el registro de hospedaje
+|Cuando existen habitaciones que satisfagan la solicitud de reserva
+|Busqueda de habitaciones disponibles destinadas a hospedaje
+|Comprobante de reserva
+
+|
+|
+|
+|
+|2
+|No existen habitaciones para el registro de hospedaje
+|Cuando no son suficientes las habitaciones que satisfagan la solicitud de reserva
+|
+|Cancelacion de la solicitud de reserva
+
+|2
+|Recepcion
+|Cancelar el comprobante de reserva
+|Anulacion de reserva
+|1
+|Reserva vigente
+|Cuando la reserva esta dentro del periodo de vigencia, pudiendo tener devolucion de su valor
+|Validar vigencia de la reserva
+|Comprobante de reserva cancelada
+
+|
+|
+|
+|
+|2
+|Reserva vencida
+|Cuando el plazo de vigencia de la reserva esta vencido
+|
+|Rechazo de la cancelacion de reserva
+
+|3
+|Recepcion
+|Ingreso al hotel
+|Registro de huespedes al hotel
+|1
+|Con reserva
+|Cuando existe reserva previa al ingreso
+|Busqueda de habitaciones disponibles destinadas a hospedaje
+|Documentacion de ingreso
+
+|
+|
+|
+|
+|2
+|Con habitacion disponible
+|Cuando no son suficientes las habitaciones que satisfagan la solicitud de reserva
+|Busqueda de habitaciones disponibles destinadas a hospedaje
+|Rechazo de la solicitud de ingreso
+
+|
+|
+|
+|
+|3
+|Sin habitacion disponible
+|Cuando no existe reserva previa al ingreso, y no cuenta con habitaciones disponibles
+|
+|Rechazo de la solicitud de ingreso
+
+|4
+|Recepcion
+|Egreso del hotel
+|Registro de la salida de los huespedes
+|1
+|Existencia de ficha de ingreso
+|Cuando existe registro de huespedes y/o consumos extras al hotel
+|Busqueda de ficha de ingreso
+|Factura con detalle
+|===
 
 ---
 
 === Sprint Planning
 
-El Sprint Planning es una reunion inicial donde:
+El *Sprint Planning* es la reunion en la que se planifica el trabajo del Sprint.
 
-* Se define el objetivo del Sprint
-* Se seleccionan historias del backlog
-* Se estiman tareas
-* Se arma el Sprint Backlog
+En esta instancia el equipo define que se va a realizar durante el ciclo, que objetivo se busca alcanzar y como se organizara el trabajo.
 
-Participan:
+Durante esta planificacion se trabaja sobre:
+
+* El objetivo del Sprint
+* Las historias o elementos seleccionados desde el backlog
+* La estimacion del trabajo
+* La organizacion del Sprint Backlog
+
+Participan habitualmente:
 
 * Product Owner
 * Scrum Master
 * Equipo de desarrollo
 
-Resultado:
-
-* Sprint Backlog definido
-* Historias asignadas
+Como resultado de esta reunion se obtiene un Sprint Backlog con el trabajo comprometido para el Sprint.
 
 ---
 
 === Scrum explicado con analogia de Formula 1
 
+Una forma simple de comprender Scrum es compararlo con la dinamica de una carrera de Formula 1.
+
 ==== 1. Planificacion del Sprint
 
-Antes de la carrera:
+Antes de comenzar la carrera, el equipo analiza condiciones, define estrategia y establece un objetivo.
 
-* Se definen objetivos
-* Se planifican estrategias
+En Scrum, esto equivale a decidir que trabajo se hara durante el Sprint y como se intentara alcanzar el objetivo.
 
 ==== 2. Sprint
 
-Durante la carrera:
+La carrera en si representa el Sprint.
 
-* El equipo ejecuta el trabajo
-* Se busca el mejor rendimiento posible
+Durante este periodo el equipo trabaja para desarrollar el producto o una mejora del mismo.
 
 ==== 3. Daily Scrum
 
-Durante la carrera (pit stop):
+Asi como durante una carrera puede haber chequeos rapidos o ajustes de estrategia, en Scrum existe una reunion diaria breve para revisar:
 
-* Reuniones breves
-* Evaluacion del progreso
-* Ajuste de estrategias
+* Que se hizo
+* Que se hara
+* Que impedimentos existen
 
 ==== 4. Sprint Review
 
-Al finalizar:
+Al finalizar la carrera se analiza el resultado.
 
-* Se analiza lo logrado
-* Se obtiene feedback
+En Scrum, la Sprint Review permite mostrar lo realizado, revisar el incremento obtenido y recibir devoluciones.
 
 ==== 5. Sprint Retrospective
 
-Entre carreras:
+Luego de la carrera se reflexiona sobre el proceso.
 
-* Se reflexiona sobre el proceso
-* Se proponen mejoras
+En Scrum, la retrospectiva busca identificar que funciono bien, que problemas hubo y que puede mejorarse en el siguiente Sprint.
 
 ---
 
@@ -1454,83 +1547,121 @@ Entre carreras:
 
 ==== Roles
 
-* Product Owner
-** Define prioridades
-** Gestiona el backlog
+Scrum define distintos roles dentro del equipo de trabajo.
 
-* Scrum Master
-** Facilita el proceso
-** Elimina impedimentos
+*Product Owner*
 
-* Equipo de desarrollo
-** Construye el producto
-** Organiza el trabajo
+* Representa la vision del producto
+* Define prioridades
+* Gestiona el Product Backlog
+* Ordena el trabajo segun valor y necesidad
 
-* Stakeholders
-** Observan y aportan feedback
+*Scrum Master*
+
+* Facilita la aplicacion de Scrum
+* Ayuda a que el equipo respete el marco de trabajo
+* Colabora en la eliminacion de impedimentos
+* Promueve la mejora continua
+
+*Equipo de desarrollo*
+
+* Construye el producto
+* Organiza el trabajo tecnico
+* Transforma requerimientos en incrementos funcionales
+* Se autogestiona para cumplir el objetivo del Sprint
+
+*Stakeholders*
+
+* Son las personas interesadas en el producto
+* Pueden aportar informacion, necesidades y retroalimentacion
+* Observan los resultados y brindan devoluciones utiles para la evolucion del producto
 
 ---
 
 ==== Artefactos
 
-* Product Backlog
-** Lista priorizada de requerimientos
+Los artefactos de Scrum permiten organizar y visibilizar el trabajo.
 
-* Sprint Backlog
-** Trabajo seleccionado para el Sprint
+*Product Backlog*
 
-* Incremento
-** Version funcional del producto
+* Es la lista priorizada de requerimientos, necesidades, mejoras o funcionalidades del producto
+* Se actualiza y refina segun evolucionan las necesidades
+
+*Sprint Backlog*
+
+* Es el conjunto de elementos seleccionados del Product Backlog para un Sprint
+* Representa el trabajo concreto comprometido por el equipo para ese ciclo
+
+*Incremento*
+
+* Es el resultado funcional obtenido al finalizar un Sprint
+* Debe aportar valor y encontrarse en condiciones de ser revisado
 
 ---
 
 ==== Eventos
 
+Scrum organiza su funcionamiento a traves de eventos definidos:
+
+* Sprint
 * Sprint Planning
 * Daily Scrum
 * Sprint Review
 * Sprint Retrospective
 
+Estos eventos estructuran el trabajo y permiten planificar, ejecutar, revisar y mejorar de forma continua.
+
 ---
 
 ==== Proceso general
 
-Ciclo continuo:
+El flujo general de Scrum puede entenderse de la siguiente manera:
 
-1. Product Backlog
-2. Sprint Planning
-3. Sprint
-4. Incremento
-5. Review
-6. Retrospective
-7. Repetir
+. Product Backlog
+. Sprint Planning
+. Sprint
+. Incremento
+. Sprint Review
+. Sprint Retrospective
+. Repeticion del ciclo
+
+Se trata de un proceso iterativo que vuelve a comenzar, incorporando en cada vuelta lo aprendido en la anterior.
 
 ---
 
-=== ¿Como comenzar con SCRUM?
+=== ¿Como comenzar con Scrum?
 
-Para implementar Scrum se debe:
+Para comenzar a trabajar con Scrum no alcanza con adoptar nombres o reuniones. Es necesario comprender la situacion de partida de la organizacion y preparar el terreno para el cambio.
 
-* Analizar la organizacion actual
-* Entender procesos existentes
-* Evaluar calidad actual
-* Detectar obstaculos
+Algunos aspectos a considerar son:
 
-Ademas:
+* Analizar como trabaja actualmente la organizacion
+* Comprender los procesos existentes
+* Evaluar el nivel de calidad actual
+* Detectar obstaculos, problemas o limitaciones
+
+Ademas, es necesario:
 
 * Definir roles
-* Identificar recursos
-* Armar equipos de trabajo
-* Definir objetivos claros
+* Identificar recursos disponibles
+* Formar equipos de trabajo
+* Establecer objetivos claros
+* Acordar una forma de trabajo compartida
+
+La implementacion de Scrum implica tanto una organizacion del trabajo como una forma de pensar la colaboracion y la mejora continua.
 
 ---
 
 === Cierre
 
-Scrum permite:
+Scrum es un marco de trabajo agil que permite organizar el desarrollo de productos de forma iterativa, colaborativa y adaptable.
 
-* Adaptarse rapidamente a cambios
-* Entregar valor en forma continua
-* Mejorar procesos mediante retroalimentacion
+Su valor principal radica en:
 
-Es una metodologia centrada en las personas y en la mejora continua.
+* Entregar valor en ciclos cortos
+* Revisar frecuentemente el resultado
+* Ajustarse a cambios
+* Aprender en cada iteracion
+* Mejorar tanto el producto como el proceso
+
+Mas que una secuencia rigida de pasos, Scrum propone una dinamica de trabajo enfocada en las personas, la colaboracion y la mejora continua.
