@@ -1098,6 +1098,8 @@ Lleva numeración acorde al nivel de la gráfica:
 ** Otro número entero (indica la secuencialidad de las acciones)
 ** Ejemplo: 1.1, 1.2, 2.1, 2.2...
 
+image::image4.1.png[]
+
 ==== Flujo
 
 Representa *datos en movimiento*. La flecha muestra la dirección: según donde apunta, indica si la información está en movimiento hacia adentro o hacia afuera de un proceso.
@@ -1108,6 +1110,8 @@ Todo flujo debe llevar una *leyenda* que indique qué datos transporta o qué co
 
 Un flujo de datos entre dos procesos solo es posible cuando la información es *sincrónica*, es decir, el proceso destino comienza cuando el proceso origen finaliza su función.
 
+image::image4.2.png[]
+
 ==== Almacén
 
 Se utiliza para modelar una colección de datos que están *en reposo*. Se grafica con *dos líneas paralelas* y su nombre es el plural del paquete de datos que representa.
@@ -1116,7 +1120,9 @@ El almacén *no puede* crear, transformar o destruir datos. No puede estar comun
 
 Los flujos conectados a un almacén solo pueden transportar paquetes de información que el almacén sea capaz de guardar.
 
-===== Tipos de flujos en almacenes
+image::image4.3.png[]
+
+*Tipos de flujos en almacenes*
 
 * *De actualización:* representan la alteración de los datos de un almacén como consecuencia de la creación de un nuevo elemento, por eliminación o modificación de otros ya existentes.
 * *De consulta:* representan la utilización de los valores de uno o más campos de un almacén o la comprobación de que los valores de los campos seleccionados cumplen unos criterios determinados.
@@ -1128,6 +1134,9 @@ Representa un *agente externo* al sistema que proporciona o recibe información 
 Se representa con un *rectángulo*. Puede aparecer varias veces en un mismo diagrama, así como en los distintos niveles del DFD, para mejorar la claridad del diagrama.
 
 El estudio de las relaciones entre entidades externas no forma parte del modelo.
+
+
+image::image4.4.png[]
 
 ---
 
