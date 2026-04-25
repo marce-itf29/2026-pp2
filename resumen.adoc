@@ -1150,7 +1150,7 @@ La construcción del DFD sigue las siguientes reglas:
 * *Simplificación:* se evitan los DFD excesivamente complejos.
 * *Coherencia:* se asegura la consistencia interna.
 
-==== Errores a evitar
+==== Errores a evitar (Con respecto a la regla de coherencia)
 
 * *Sumideros infinitos:* burbujas que tienen entradas pero no tienen salidas.
 * *Burbujas de generación espontánea:* aquellas que tienen salidas sin tener entradas.
@@ -1259,6 +1259,8 @@ Para el caso del Hotel Newton Palace, el diagrama de contexto sería:
 * *Flujos de salida:* confirmación de reserva, comprobante de ingreso, factura
 
 El contexto y cada burbuja del Nivel 1 tienen las *mismas entradas y salidas*. Es decir, todo lo que entra y sale del sistema en el contexto, se distribuye entre los procesos del Nivel 1.
+
+image::image4.5.png[]
 
 ==== Diagrama de Nivel 1
 
